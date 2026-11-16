@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'org.fooddiary.benchmark'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'org.fooddiary.benchmark'
+        minSdk 28
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+        manifestPlaceholders = [appLabel: 'Food-101 benchmark']
+        buildConfigField 'boolean', 'PRECISION_BENCHMARK', 'false'
+        buildConfigField 'boolean', 'CONTROL_BENCHMARK', 'false'
+        ndk { abiFilters 'arm64-v8a' }
+    }
+    buildFeatures { buildConfig true }
+    buildTypes {
+        control {
+            initWith debug
+            applicationIdSuffix '.ce'
+            matchingFallbacks = ['debug']
+            manifestPlaceholders = [appLabel: 'Food-101 CE vs KD']
+            buildConfigField 'boolean', 'CONTROL_BENCHMARK', 'true'
+        }
+        precision {
+            initWith debug
+            applicationIdSuffix '.ptq'
+            matchingFallbacks = ['debug']
+            manifestPlaceholders = [appLabel: 'Food-101 FP32 vs INT8']
+            buildConfigField 'boolean', 'PRECISION_BENCHMARK', 'true'
+        }
+    }
+    sourceSets {
+        main.assets.srcDirs = []
+        debug.assets.srcDirs = ['src/main/assets']
+        release.assets.srcDirs = ['src/main/assets']
+        precision.assets.srcDirs = ['src/precision/assets', layout.buildDirectory.dir('generated/precisionPhotos')]
+        control.assets.srcDirs = ['src/control/assets', layout.buildDirectory.dir('generated/controlShared')]
+    }
+    androidResources { noCompress += ['pte', 'jpg'] }
+}
+
+def sharedPhotos = tasks.register('syncPrecisionPhotos', Sync) {
+    from('src/main/assets') { include 'photos/*.jpg', 'classes_food101.txt' }
+    into layout.buildDirectory.dir('generated/precisionPhotos')
+}
+tasks.matching { it.name == 'mergePrecisionAssets' }.configureEach {
+    dependsOn sharedPhotos
+}
+
+def controlShared = tasks.register('syncControlAssets', Sync) {
+    from('src/main/assets') { include 'photos/*.jpg', 'classes_food101.txt', 'models/distilled.pte' }
+    into layout.buildDirectory.dir('generated/controlShared')
+}
+tasks.matching { it.name == 'mergeControlAssets' }.configureEach {
+    dependsOn controlShared
+}
+
+dependencies {
+    implementation 'org.pytorch:executorch-android:1.5.1'
+}

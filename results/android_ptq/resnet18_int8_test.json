@@ -1,0 +1,20 @@
+{
+  "model": "resnet18_int8.pte",
+  "model_sha256": "cef57b2a723b5f424f78363e051fa09f6bc87589fa703150a58f303ece26be75",
+  "samples": 25250,
+  "test_manifest_sha256": "440d53374697d019a972fe66e8e44031ae80267a126ecb814ad537ec1fd506db",
+  "calibration_overlap": 0,
+  "top1_correct": 20799,
+  "top3_correct": 23639,
+  "top1_percent": 82.37227722772278,
+  "top3_percent": 93.61980198019802,
+  "executorch": "1.5.1",
+  "torch": "2.14.0+cpu",
+  "torchvision": "0.29.0+cpu",
+  "pillow": "13.0.0",
+  "top3_boundary_ties": 1684,
+  "tie_break": "ascending class index",
+  "device": "CPU",
+  "elapsed_seconds": 55.452164016001916,
+  "predictions_sha256": "b1f0ddcf8a9d7f217da76b24c21e68e48df8a0ce72f3405afb4d6e92e7e08a75"
+}

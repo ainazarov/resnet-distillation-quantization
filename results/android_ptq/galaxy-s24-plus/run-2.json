@@ -1,0 +1,4698 @@
+{
+  "manufacturer": "samsung",
+  "model": "SM-S926B",
+  "device": "e2s",
+  "android_version": "16",
+  "android_sdk": 36,
+  "abi": "arm64-v8a",
+  "soc": "s5e9945",
+  "executorch": "1.5.1",
+  "threads": 4,
+  "batch_size": 1,
+  "precision": "FP32 vs static INT8",
+  "tensor_io_dtype": "FP32",
+  "warmup_per_model": 20,
+  "photos": 101,
+  "reference_sha256": "ac7ceb40db2502b7f44f1cd873d2a70b599c5fc8c7422e524e086febab860671",
+  "labels_sha256": "efe7060c0e6aa88c98d3ad9532240013747f6b2179d45e1f750527890437c59d",
+  "file_cache": "warm",
+  "debugger_attached": false,
+  "start_unix_ms": 1794827640930,
+  "power_save_start": false,
+  "thermal_status_start": 0,
+  "power_save_end": false,
+  "thermal_status_end": 0,
+  "finish_unix_ms": 1794827644508,
+  "models": {
+    "resnet18_fp32": {
+      "backends": [
+        "XnnpackBackend"
+      ],
+      "weight_precision": "FP32",
+      "pte_bytes": 44912916,
+      "pte_sha256": "4b9158b00b0e6a10e4943e4b6de56e51b4b8340b6b833435d829d4ef7d230f9c",
+      "median_forward_ms": 21.485468,
+      "p95_jpeg_to_top3_ms": 28.319922,
+      "ordered_top3_matches": 101
+    },
+    "resnet18_int8": {
+      "backends": [
+        "XnnpackBackend"
+      ],
+      "weight_precision": "INT8",
+      "pte_bytes": 11307796,
+      "pte_sha256": "cef57b2a723b5f424f78363e051fa09f6bc87589fa703150a58f303ece26be75",
+      "median_forward_ms": 5.079336,
+      "p95_jpeg_to_top3_ms": 11.974961,
+      "ordered_top3_matches": 101
+    }
+  },
+  "rows": [
+    {
+      "id": "fried_rice\/3331345",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.331367,
+      "jpeg_to_top3_ms": 24.430429,
+      "top3": [
+        44,
+        71,
+        14
+      ],
+      "dishes": [
+        "fried_rice",
+        "paella",
+        "carrot_cake"
+      ],
+      "python_top3": [
+        44,
+        71,
+        14
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "fried_rice\/3331345",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.578789,
+      "jpeg_to_top3_ms": 8.827539,
+      "top3": [
+        44,
+        71,
+        14
+      ],
+      "dishes": [
+        "fried_rice",
+        "paella",
+        "carrot_cake"
+      ],
+      "python_top3": [
+        44,
+        71,
+        14
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "dumplings\/2630977",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.166445,
+      "jpeg_to_top3_ms": 9.135586,
+      "top3": [
+        32,
+        76,
+        86
+      ],
+      "dishes": [
+        "dumplings",
+        "pizza",
+        "sashimi"
+      ],
+      "python_top3": [
+        32,
+        76,
+        86
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "dumplings\/2630977",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.963359,
+      "jpeg_to_top3_ms": 24.837695,
+      "top3": [
+        32,
+        76,
+        7
+      ],
+      "dishes": [
+        "dumplings",
+        "pizza",
+        "bibimbap"
+      ],
+      "python_top3": [
+        32,
+        76,
+        7
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "macarons\/3166758",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 23.644492,
+      "jpeg_to_top3_ms": 28.319922,
+      "top3": [
+        63,
+        94,
+        98
+      ],
+      "dishes": [
+        "macarons",
+        "strawberry_shortcake",
+        "tiramisu"
+      ],
+      "python_top3": [
+        63,
+        94,
+        98
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "macarons\/3166758",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.730078,
+      "jpeg_to_top3_ms": 9.415703,
+      "top3": [
+        63,
+        94,
+        98
+      ],
+      "dishes": [
+        "macarons",
+        "strawberry_shortcake",
+        "tiramisu"
+      ],
+      "python_top3": [
+        63,
+        94,
+        98
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "breakfast_burrito\/140461",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.053867,
+      "jpeg_to_top3_ms": 8.297461,
+      "top3": [
+        10,
+        17,
+        9
+      ],
+      "dishes": [
+        "bruschetta",
+        "cheesecake",
+        "breakfast_burrito"
+      ],
+      "python_top3": [
+        10,
+        17,
+        9
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "breakfast_burrito\/140461",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.123907,
+      "jpeg_to_top3_ms": 24.401015,
+      "top3": [
+        10,
+        17,
+        9
+      ],
+      "dishes": [
+        "bruschetta",
+        "cheesecake",
+        "breakfast_burrito"
+      ],
+      "python_top3": [
+        10,
+        17,
+        9
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "nachos\/121508",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.62625,
+      "jpeg_to_top3_ms": 24.402696,
+      "top3": [
+        66,
+        96,
+        56
+      ],
+      "dishes": [
+        "nachos",
+        "tacos",
+        "huevos_rancheros"
+      ],
+      "python_top3": [
+        66,
+        96,
+        56
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "nachos\/121508",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.768946,
+      "jpeg_to_top3_ms": 8.529687,
+      "top3": [
+        66,
+        96,
+        56
+      ],
+      "dishes": [
+        "nachos",
+        "tacos",
+        "huevos_rancheros"
+      ],
+      "python_top3": [
+        66,
+        96,
+        56
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "deviled_eggs\/1642423",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.889688,
+      "jpeg_to_top3_ms": 8.918516,
+      "top3": [
+        30,
+        87,
+        16
+      ],
+      "dishes": [
+        "deviled_eggs",
+        "scallops",
+        "cheese_plate"
+      ],
+      "python_top3": [
+        30,
+        87,
+        16
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "deviled_eggs\/1642423",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.427031,
+      "jpeg_to_top3_ms": 25.483477,
+      "top3": [
+        30,
+        87,
+        16
+      ],
+      "dishes": [
+        "deviled_eggs",
+        "scallops",
+        "cheese_plate"
+      ],
+      "python_top3": [
+        30,
+        87,
+        16
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "baby_back_ribs\/519489",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.904023,
+      "jpeg_to_top3_ms": 26.012422,
+      "top3": [
+        1,
+        96,
+        66
+      ],
+      "dishes": [
+        "baby_back_ribs",
+        "tacos",
+        "nachos"
+      ],
+      "python_top3": [
+        1,
+        96,
+        66
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "baby_back_ribs\/519489",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 6.226875,
+      "jpeg_to_top3_ms": 10.416406,
+      "top3": [
+        1,
+        66,
+        96
+      ],
+      "dishes": [
+        "baby_back_ribs",
+        "nachos",
+        "tacos"
+      ],
+      "python_top3": [
+        1,
+        66,
+        96
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "poutine\/2312311",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.575,
+      "jpeg_to_top3_ms": 8.560039,
+      "top3": [
+        47,
+        82,
+        10
+      ],
+      "dishes": [
+        "gnocchi",
+        "ravioli",
+        "bruschetta"
+      ],
+      "python_top3": [
+        47,
+        82,
+        10
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "poutine\/2312311",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.90832,
+      "jpeg_to_top3_ms": 25.787187,
+      "top3": [
+        47,
+        82,
+        10
+      ],
+      "dishes": [
+        "gnocchi",
+        "ravioli",
+        "bruschetta"
+      ],
+      "python_top3": [
+        47,
+        82,
+        10
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ceviche\/826746",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.988203,
+      "jpeg_to_top3_ms": 26.011993,
+      "top3": [
+        15,
+        87,
+        96
+      ],
+      "dishes": [
+        "ceviche",
+        "scallops",
+        "tacos"
+      ],
+      "python_top3": [
+        15,
+        87,
+        96
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ceviche\/826746",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 6.848204,
+      "jpeg_to_top3_ms": 11.129726,
+      "top3": [
+        15,
+        87,
+        89
+      ],
+      "dishes": [
+        "ceviche",
+        "scallops",
+        "shrimp_and_grits"
+      ],
+      "python_top3": [
+        15,
+        87,
+        89
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "prime_rib\/3260842",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.694844,
+      "jpeg_to_top3_ms": 8.412343,
+      "top3": [
+        79,
+        93,
+        77
+      ],
+      "dishes": [
+        "prime_rib",
+        "steak",
+        "pork_chop"
+      ],
+      "python_top3": [
+        79,
+        93,
+        77
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "prime_rib\/3260842",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.2275,
+      "jpeg_to_top3_ms": 24.894102,
+      "top3": [
+        79,
+        93,
+        77
+      ],
+      "dishes": [
+        "prime_rib",
+        "steak",
+        "pork_chop"
+      ],
+      "python_top3": [
+        79,
+        93,
+        77
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "panna_cotta\/3746420",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.081367,
+      "jpeg_to_top3_ms": 25.295469,
+      "top3": [
+        73,
+        17,
+        13
+      ],
+      "dishes": [
+        "panna_cotta",
+        "cheesecake",
+        "caprese_salad"
+      ],
+      "python_top3": [
+        73,
+        17,
+        13
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "panna_cotta\/3746420",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.592422,
+      "jpeg_to_top3_ms": 8.894375,
+      "top3": [
+        73,
+        17,
+        13
+      ],
+      "dishes": [
+        "panna_cotta",
+        "cheesecake",
+        "caprese_salad"
+      ],
+      "python_top3": [
+        73,
+        17,
+        13
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "bruschetta\/642089",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.011093,
+      "jpeg_to_top3_ms": 9.290547,
+      "top3": [
+        10,
+        42,
+        31
+      ],
+      "dishes": [
+        "bruschetta",
+        "french_toast",
+        "donuts"
+      ],
+      "python_top3": [
+        10,
+        42,
+        31
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "bruschetta\/642089",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.115273,
+      "jpeg_to_top3_ms": 25.290703,
+      "top3": [
+        10,
+        42,
+        31
+      ],
+      "dishes": [
+        "bruschetta",
+        "french_toast",
+        "donuts"
+      ],
+      "python_top3": [
+        10,
+        42,
+        31
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "waffles\/1648664",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.370898,
+      "jpeg_to_top3_ms": 25.905625,
+      "top3": [
+        100,
+        82,
+        87
+      ],
+      "dishes": [
+        "waffles",
+        "ravioli",
+        "scallops"
+      ],
+      "python_top3": [
+        100,
+        82,
+        87
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "waffles\/1648664",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.586641,
+      "jpeg_to_top3_ms": 8.180039,
+      "top3": [
+        100,
+        82,
+        47
+      ],
+      "dishes": [
+        "waffles",
+        "ravioli",
+        "gnocchi"
+      ],
+      "python_top3": [
+        100,
+        82,
+        47
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "french_toast\/1849074",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.186133,
+      "jpeg_to_top3_ms": 9.599492,
+      "top3": [
+        42,
+        31,
+        16
+      ],
+      "dishes": [
+        "french_toast",
+        "donuts",
+        "cheese_plate"
+      ],
+      "python_top3": [
+        42,
+        31,
+        16
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "french_toast\/1849074",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.718555,
+      "jpeg_to_top3_ms": 24.97539,
+      "top3": [
+        42,
+        31,
+        16
+      ],
+      "dishes": [
+        "french_toast",
+        "donuts",
+        "cheese_plate"
+      ],
+      "python_top3": [
+        42,
+        31,
+        16
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hot_dog\/67755",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.031719,
+      "jpeg_to_top3_ms": 24.716875,
+      "top3": [
+        55,
+        53,
+        61
+      ],
+      "dishes": [
+        "hot_dog",
+        "hamburger",
+        "lobster_roll_sandwich"
+      ],
+      "python_top3": [
+        55,
+        53,
+        61
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hot_dog\/67755",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.715665,
+      "jpeg_to_top3_ms": 8.344805,
+      "top3": [
+        55,
+        53,
+        61
+      ],
+      "dishes": [
+        "hot_dog",
+        "hamburger",
+        "lobster_roll_sandwich"
+      ],
+      "python_top3": [
+        55,
+        53,
+        61
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "french_onion_soup\/801168",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.227539,
+      "jpeg_to_top3_ms": 8.797383,
+      "top3": [
+        41,
+        59,
+        27
+      ],
+      "dishes": [
+        "french_onion_soup",
+        "lasagna",
+        "creme_brulee"
+      ],
+      "python_top3": [
+        41,
+        59,
+        27
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "french_onion_soup\/801168",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.436602,
+      "jpeg_to_top3_ms": 25.824805,
+      "top3": [
+        41,
+        59,
+        27
+      ],
+      "dishes": [
+        "french_onion_soup",
+        "lasagna",
+        "creme_brulee"
+      ],
+      "python_top3": [
+        41,
+        59,
+        27
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "grilled_cheese_sandwich\/226046",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.573633,
+      "jpeg_to_top3_ms": 26.314219,
+      "top3": [
+        49,
+        98,
+        25
+      ],
+      "dishes": [
+        "grilled_cheese_sandwich",
+        "tiramisu",
+        "club_sandwich"
+      ],
+      "python_top3": [
+        49,
+        98,
+        25
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "grilled_cheese_sandwich\/226046",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.693046,
+      "jpeg_to_top3_ms": 9.593321,
+      "top3": [
+        49,
+        98,
+        25
+      ],
+      "dishes": [
+        "grilled_cheese_sandwich",
+        "tiramisu",
+        "club_sandwich"
+      ],
+      "python_top3": [
+        49,
+        98,
+        25
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "sushi\/1245193",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.493633,
+      "jpeg_to_top3_ms": 8.533633,
+      "top3": [
+        95,
+        86,
+        76
+      ],
+      "dishes": [
+        "sushi",
+        "sashimi",
+        "pizza"
+      ],
+      "python_top3": [
+        95,
+        86,
+        76
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "sushi\/1245193",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.039063,
+      "jpeg_to_top3_ms": 25.053086,
+      "top3": [
+        95,
+        86,
+        76
+      ],
+      "dishes": [
+        "sushi",
+        "sashimi",
+        "pizza"
+      ],
+      "python_top3": [
+        95,
+        86,
+        76
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "peking_duck\/3020706",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.610196,
+      "jpeg_to_top3_ms": 25.104649,
+      "top3": [
+        7,
+        70,
+        80
+      ],
+      "dishes": [
+        "bibimbap",
+        "pad_thai",
+        "pulled_pork_sandwich"
+      ],
+      "python_top3": [
+        7,
+        70,
+        80
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "peking_duck\/3020706",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 7.701445,
+      "jpeg_to_top3_ms": 12.224023,
+      "top3": [
+        7,
+        70,
+        80
+      ],
+      "dishes": [
+        "bibimbap",
+        "pad_thai",
+        "pulled_pork_sandwich"
+      ],
+      "python_top3": [
+        7,
+        70,
+        80
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "huevos_rancheros\/728966",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 7.498125,
+      "jpeg_to_top3_ms": 11.749453,
+      "top3": [
+        56,
+        59,
+        7
+      ],
+      "dishes": [
+        "huevos_rancheros",
+        "lasagna",
+        "bibimbap"
+      ],
+      "python_top3": [
+        56,
+        59,
+        7
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "huevos_rancheros\/728966",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.183398,
+      "jpeg_to_top3_ms": 26.410039,
+      "top3": [
+        56,
+        59,
+        7
+      ],
+      "dishes": [
+        "huevos_rancheros",
+        "lasagna",
+        "bibimbap"
+      ],
+      "python_top3": [
+        56,
+        59,
+        7
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ice_cream\/2005858",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.471954,
+      "jpeg_to_top3_ms": 25.858438,
+      "top3": [
+        58,
+        22,
+        21
+      ],
+      "dishes": [
+        "ice_cream",
+        "chocolate_mousse",
+        "chocolate_cake"
+      ],
+      "python_top3": [
+        58,
+        22,
+        21
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ice_cream\/2005858",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 6.28418,
+      "jpeg_to_top3_ms": 10.467969,
+      "top3": [
+        58,
+        22,
+        21
+      ],
+      "dishes": [
+        "ice_cream",
+        "chocolate_mousse",
+        "chocolate_cake"
+      ],
+      "python_top3": [
+        58,
+        22,
+        21
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "bread_pudding\/423174",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.954414,
+      "jpeg_to_top3_ms": 9.530156,
+      "top3": [
+        8,
+        0,
+        74
+      ],
+      "dishes": [
+        "bread_pudding",
+        "apple_pie",
+        "peking_duck"
+      ],
+      "python_top3": [
+        8,
+        0,
+        74
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "bread_pudding\/423174",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 23.063828,
+      "jpeg_to_top3_ms": 28.457891,
+      "top3": [
+        8,
+        0,
+        74
+      ],
+      "dishes": [
+        "bread_pudding",
+        "apple_pie",
+        "peking_duck"
+      ],
+      "python_top3": [
+        8,
+        0,
+        74
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chocolate_cake\/3120351",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.781524,
+      "jpeg_to_top3_ms": 24.957071,
+      "top3": [
+        21,
+        72,
+        42
+      ],
+      "dishes": [
+        "chocolate_cake",
+        "pancakes",
+        "french_toast"
+      ],
+      "python_top3": [
+        21,
+        72,
+        42
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chocolate_cake\/3120351",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 7.888008,
+      "jpeg_to_top3_ms": 12.115508,
+      "top3": [
+        21,
+        42,
+        72
+      ],
+      "dishes": [
+        "chocolate_cake",
+        "french_toast",
+        "pancakes"
+      ],
+      "python_top3": [
+        21,
+        42,
+        72
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "edamame\/3669870",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.52793,
+      "jpeg_to_top3_ms": 8.135781,
+      "top3": [
+        33,
+        88,
+        99
+      ],
+      "dishes": [
+        "edamame",
+        "seaweed_salad",
+        "tuna_tartare"
+      ],
+      "python_top3": [
+        33,
+        88,
+        99
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "edamame\/3669870",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.409141,
+      "jpeg_to_top3_ms": 24.998945,
+      "top3": [
+        33,
+        88,
+        99
+      ],
+      "dishes": [
+        "edamame",
+        "seaweed_salad",
+        "tuna_tartare"
+      ],
+      "python_top3": [
+        33,
+        88,
+        99
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pulled_pork_sandwich\/3760542",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.096641,
+      "jpeg_to_top3_ms": 24.461055,
+      "top3": [
+        70,
+        80,
+        91
+      ],
+      "dishes": [
+        "pad_thai",
+        "pulled_pork_sandwich",
+        "spaghetti_carbonara"
+      ],
+      "python_top3": [
+        70,
+        80,
+        91
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pulled_pork_sandwich\/3760542",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 6.636133,
+      "jpeg_to_top3_ms": 10.200586,
+      "top3": [
+        70,
+        80,
+        91
+      ],
+      "dishes": [
+        "pad_thai",
+        "pulled_pork_sandwich",
+        "spaghetti_carbonara"
+      ],
+      "python_top3": [
+        70,
+        80,
+        91
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "mussels\/1032631",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 6.431406,
+      "jpeg_to_top3_ms": 9.462539,
+      "top3": [
+        65,
+        71,
+        17
+      ],
+      "dishes": [
+        "mussels",
+        "paella",
+        "cheesecake"
+      ],
+      "python_top3": [
+        65,
+        71,
+        17
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "mussels\/1032631",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.700156,
+      "jpeg_to_top3_ms": 23.636055,
+      "top3": [
+        65,
+        71,
+        17
+      ],
+      "dishes": [
+        "mussels",
+        "paella",
+        "cheesecake"
+      ],
+      "python_top3": [
+        65,
+        71,
+        17
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "gyoza\/3368789",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.870156,
+      "jpeg_to_top3_ms": 26.335118,
+      "top3": [
+        52,
+        32,
+        41
+      ],
+      "dishes": [
+        "gyoza",
+        "dumplings",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        52,
+        32,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "gyoza\/3368789",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.636094,
+      "jpeg_to_top3_ms": 9.065899,
+      "top3": [
+        52,
+        32,
+        41
+      ],
+      "dishes": [
+        "gyoza",
+        "dumplings",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        52,
+        32,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "risotto\/2739060",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.693516,
+      "jpeg_to_top3_ms": 8.848867,
+      "top3": [
+        84,
+        24,
+        47
+      ],
+      "dishes": [
+        "risotto",
+        "clam_chowder",
+        "gnocchi"
+      ],
+      "python_top3": [
+        84,
+        24,
+        47
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "risotto\/2739060",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.426679,
+      "jpeg_to_top3_ms": 25.583593,
+      "top3": [
+        84,
+        24,
+        47
+      ],
+      "dishes": [
+        "risotto",
+        "clam_chowder",
+        "gnocchi"
+      ],
+      "python_top3": [
+        84,
+        24,
+        47
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "crab_cakes\/2316460",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.853867,
+      "jpeg_to_top3_ms": 24.274102,
+      "top3": [
+        26,
+        37,
+        50
+      ],
+      "dishes": [
+        "crab_cakes",
+        "filet_mignon",
+        "grilled_salmon"
+      ],
+      "python_top3": [
+        26,
+        37,
+        50
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "crab_cakes\/2316460",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.757735,
+      "jpeg_to_top3_ms": 8.282657,
+      "top3": [
+        26,
+        37,
+        50
+      ],
+      "dishes": [
+        "crab_cakes",
+        "filet_mignon",
+        "grilled_salmon"
+      ],
+      "python_top3": [
+        26,
+        37,
+        50
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pad_thai\/3828756",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.503515,
+      "jpeg_to_top3_ms": 8.601367,
+      "top3": [
+        70,
+        44,
+        50
+      ],
+      "dishes": [
+        "pad_thai",
+        "fried_rice",
+        "grilled_salmon"
+      ],
+      "python_top3": [
+        70,
+        44,
+        50
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pad_thai\/3828756",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.445429,
+      "jpeg_to_top3_ms": 24.456875,
+      "top3": [
+        70,
+        44,
+        50
+      ],
+      "dishes": [
+        "pad_thai",
+        "fried_rice",
+        "grilled_salmon"
+      ],
+      "python_top3": [
+        70,
+        44,
+        50
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "grilled_salmon\/2540331",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.524023,
+      "jpeg_to_top3_ms": 25.370234,
+      "top3": [
+        50,
+        46,
+        12
+      ],
+      "dishes": [
+        "grilled_salmon",
+        "garlic_bread",
+        "cannoli"
+      ],
+      "python_top3": [
+        50,
+        46,
+        12
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "grilled_salmon\/2540331",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.609218,
+      "jpeg_to_top3_ms": 8.28961,
+      "top3": [
+        50,
+        46,
+        12
+      ],
+      "dishes": [
+        "grilled_salmon",
+        "garlic_bread",
+        "cannoli"
+      ],
+      "python_top3": [
+        50,
+        46,
+        12
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "steak\/504349",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.645273,
+      "jpeg_to_top3_ms": 9.800898,
+      "top3": [
+        93,
+        37,
+        77
+      ],
+      "dishes": [
+        "steak",
+        "filet_mignon",
+        "pork_chop"
+      ],
+      "python_top3": [
+        93,
+        37,
+        77
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "steak\/504349",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.001094,
+      "jpeg_to_top3_ms": 26.260312,
+      "top3": [
+        93,
+        37,
+        77
+      ],
+      "dishes": [
+        "steak",
+        "filet_mignon",
+        "pork_chop"
+      ],
+      "python_top3": [
+        93,
+        37,
+        77
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "greek_salad\/193155",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.705391,
+      "jpeg_to_top3_ms": 26.765312,
+      "top3": [
+        48,
+        36,
+        11
+      ],
+      "dishes": [
+        "greek_salad",
+        "falafel",
+        "caesar_salad"
+      ],
+      "python_top3": [
+        48,
+        36,
+        11
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "greek_salad\/193155",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.732461,
+      "jpeg_to_top3_ms": 8.489492,
+      "top3": [
+        48,
+        36,
+        11
+      ],
+      "dishes": [
+        "greek_salad",
+        "falafel",
+        "caesar_salad"
+      ],
+      "python_top3": [
+        48,
+        36,
+        11
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "lobster_bisque\/2179217",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.728828,
+      "jpeg_to_top3_ms": 9.90332,
+      "top3": [
+        60,
+        18,
+        41
+      ],
+      "dishes": [
+        "lobster_bisque",
+        "chicken_curry",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        60,
+        18,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "lobster_bisque\/2179217",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.620274,
+      "jpeg_to_top3_ms": 25.91207,
+      "top3": [
+        60,
+        18,
+        41
+      ],
+      "dishes": [
+        "lobster_bisque",
+        "chicken_curry",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        60,
+        18,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "filet_mignon\/138362",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 24.779649,
+      "jpeg_to_top3_ms": 28.369922,
+      "top3": [
+        37,
+        26,
+        99
+      ],
+      "dishes": [
+        "filet_mignon",
+        "crab_cakes",
+        "tuna_tartare"
+      ],
+      "python_top3": [
+        37,
+        26,
+        99
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "filet_mignon\/138362",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 7.497032,
+      "jpeg_to_top3_ms": 11.032461,
+      "top3": [
+        37,
+        26,
+        99
+      ],
+      "dishes": [
+        "filet_mignon",
+        "crab_cakes",
+        "tuna_tartare"
+      ],
+      "python_top3": [
+        37,
+        26,
+        99
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "gnocchi\/3821730",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.921719,
+      "jpeg_to_top3_ms": 9.10414,
+      "top3": [
+        82,
+        47,
+        89
+      ],
+      "dishes": [
+        "ravioli",
+        "gnocchi",
+        "shrimp_and_grits"
+      ],
+      "python_top3": [
+        82,
+        47,
+        89
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "gnocchi\/3821730",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.945,
+      "jpeg_to_top3_ms": 25.356679,
+      "top3": [
+        82,
+        47,
+        89
+      ],
+      "dishes": [
+        "ravioli",
+        "gnocchi",
+        "shrimp_and_grits"
+      ],
+      "python_top3": [
+        82,
+        47,
+        89
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "frozen_yogurt\/2750098",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.421914,
+      "jpeg_to_top3_ms": 25.751836,
+      "top3": [
+        45,
+        5,
+        78
+      ],
+      "dishes": [
+        "frozen_yogurt",
+        "beet_salad",
+        "poutine"
+      ],
+      "python_top3": [
+        45,
+        5,
+        78
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "frozen_yogurt\/2750098",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.466719,
+      "jpeg_to_top3_ms": 9.676757,
+      "top3": [
+        45,
+        5,
+        78
+      ],
+      "dishes": [
+        "frozen_yogurt",
+        "beet_salad",
+        "poutine"
+      ],
+      "python_top3": [
+        45,
+        5,
+        78
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "tuna_tartare\/884242",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.504062,
+      "jpeg_to_top3_ms": 9.879961,
+      "top3": [
+        99,
+        4,
+        15
+      ],
+      "dishes": [
+        "tuna_tartare",
+        "beef_tartare",
+        "ceviche"
+      ],
+      "python_top3": [
+        99,
+        4,
+        15
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "tuna_tartare\/884242",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.866406,
+      "jpeg_to_top3_ms": 26.330195,
+      "top3": [
+        99,
+        4,
+        15
+      ],
+      "dishes": [
+        "tuna_tartare",
+        "beef_tartare",
+        "ceviche"
+      ],
+      "python_top3": [
+        99,
+        4,
+        15
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "seaweed_salad\/3270222",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.873711,
+      "jpeg_to_top3_ms": 26.168515,
+      "top3": [
+        88,
+        84,
+        5
+      ],
+      "dishes": [
+        "seaweed_salad",
+        "risotto",
+        "beet_salad"
+      ],
+      "python_top3": [
+        88,
+        84,
+        5
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "seaweed_salad\/3270222",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 7.768828,
+      "jpeg_to_top3_ms": 12.23043,
+      "top3": [
+        88,
+        84,
+        5
+      ],
+      "dishes": [
+        "seaweed_salad",
+        "risotto",
+        "beet_salad"
+      ],
+      "python_top3": [
+        88,
+        84,
+        5
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "spaghetti_carbonara\/1804630",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 6.486797,
+      "jpeg_to_top3_ms": 10.752344,
+      "top3": [
+        91,
+        90,
+        67
+      ],
+      "dishes": [
+        "spaghetti_carbonara",
+        "spaghetti_bolognese",
+        "omelette"
+      ],
+      "python_top3": [
+        91,
+        90,
+        67
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "spaghetti_carbonara\/1804630",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.729375,
+      "jpeg_to_top3_ms": 26.603672,
+      "top3": [
+        91,
+        90,
+        67
+      ],
+      "dishes": [
+        "spaghetti_carbonara",
+        "spaghetti_bolognese",
+        "omelette"
+      ],
+      "python_top3": [
+        91,
+        90,
+        67
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cannoli\/2181827",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.904922,
+      "jpeg_to_top3_ms": 25.330703,
+      "top3": [
+        12,
+        2,
+        39
+      ],
+      "dishes": [
+        "cannoli",
+        "baklava",
+        "foie_gras"
+      ],
+      "python_top3": [
+        12,
+        2,
+        39
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cannoli\/2181827",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.388828,
+      "jpeg_to_top3_ms": 8.617383,
+      "top3": [
+        12,
+        2,
+        39
+      ],
+      "dishes": [
+        "cannoli",
+        "baklava",
+        "foie_gras"
+      ],
+      "python_top3": [
+        12,
+        2,
+        39
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "falafel\/3376916",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.080313,
+      "jpeg_to_top3_ms": 8.860196,
+      "top3": [
+        36,
+        26,
+        4
+      ],
+      "dishes": [
+        "falafel",
+        "crab_cakes",
+        "beef_tartare"
+      ],
+      "python_top3": [
+        36,
+        26,
+        4
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "falafel\/3376916",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.845234,
+      "jpeg_to_top3_ms": 24.576484,
+      "top3": [
+        36,
+        26,
+        4
+      ],
+      "dishes": [
+        "falafel",
+        "crab_cakes",
+        "beef_tartare"
+      ],
+      "python_top3": [
+        36,
+        26,
+        4
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "churros\/3479518",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.665782,
+      "jpeg_to_top3_ms": 24.515039,
+      "top3": [
+        23,
+        1,
+        42
+      ],
+      "dishes": [
+        "churros",
+        "baby_back_ribs",
+        "french_toast"
+      ],
+      "python_top3": [
+        23,
+        1,
+        42
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "churros\/3479518",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.738554,
+      "jpeg_to_top3_ms": 8.635508,
+      "top3": [
+        23,
+        1,
+        42
+      ],
+      "dishes": [
+        "churros",
+        "baby_back_ribs",
+        "french_toast"
+      ],
+      "python_top3": [
+        23,
+        1,
+        42
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "foie_gras\/1979453",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.675508,
+      "jpeg_to_top3_ms": 9.180976,
+      "top3": [
+        37,
+        81,
+        79
+      ],
+      "dishes": [
+        "filet_mignon",
+        "ramen",
+        "prime_rib"
+      ],
+      "python_top3": [
+        37,
+        81,
+        79
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "foie_gras\/1979453",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.485468,
+      "jpeg_to_top3_ms": 25.182071,
+      "top3": [
+        81,
+        37,
+        79
+      ],
+      "dishes": [
+        "ramen",
+        "filet_mignon",
+        "prime_rib"
+      ],
+      "python_top3": [
+        81,
+        37,
+        79
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "french_fries\/3543947",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.482461,
+      "jpeg_to_top3_ms": 25.822227,
+      "top3": [
+        40,
+        23,
+        20
+      ],
+      "dishes": [
+        "french_fries",
+        "churros",
+        "chicken_wings"
+      ],
+      "python_top3": [
+        40,
+        23,
+        20
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "french_fries\/3543947",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 7.185039,
+      "jpeg_to_top3_ms": 11.702149,
+      "top3": [
+        40,
+        23,
+        20
+      ],
+      "dishes": [
+        "french_fries",
+        "churros",
+        "chicken_wings"
+      ],
+      "python_top3": [
+        40,
+        23,
+        20
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chicken_curry\/418069",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.587148,
+      "jpeg_to_top3_ms": 9.218242,
+      "top3": [
+        18,
+        89,
+        93
+      ],
+      "dishes": [
+        "chicken_curry",
+        "shrimp_and_grits",
+        "steak"
+      ],
+      "python_top3": [
+        18,
+        89,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chicken_curry\/418069",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.701562,
+      "jpeg_to_top3_ms": 29.845742,
+      "top3": [
+        18,
+        89,
+        93
+      ],
+      "dishes": [
+        "chicken_curry",
+        "shrimp_and_grits",
+        "steak"
+      ],
+      "python_top3": [
+        18,
+        89,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "omelette\/3156980",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.737187,
+      "jpeg_to_top3_ms": 25.354258,
+      "top3": [
+        0,
+        72,
+        6
+      ],
+      "dishes": [
+        "apple_pie",
+        "pancakes",
+        "beignets"
+      ],
+      "python_top3": [
+        0,
+        72,
+        6
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "omelette\/3156980",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.443516,
+      "jpeg_to_top3_ms": 8.811171,
+      "top3": [
+        0,
+        72,
+        85
+      ],
+      "dishes": [
+        "apple_pie",
+        "pancakes",
+        "samosa"
+      ],
+      "python_top3": [
+        0,
+        72,
+        85
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "macaroni_and_cheese\/1439523",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.156914,
+      "jpeg_to_top3_ms": 9.307695,
+      "top3": [
+        62,
+        91,
+        40
+      ],
+      "dishes": [
+        "macaroni_and_cheese",
+        "spaghetti_carbonara",
+        "french_fries"
+      ],
+      "python_top3": [
+        62,
+        91,
+        40
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "macaroni_and_cheese\/1439523",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.725234,
+      "jpeg_to_top3_ms": 26.217617,
+      "top3": [
+        62,
+        91,
+        40
+      ],
+      "dishes": [
+        "macaroni_and_cheese",
+        "spaghetti_carbonara",
+        "french_fries"
+      ],
+      "python_top3": [
+        62,
+        91,
+        40
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "lobster_roll_sandwich\/1863757",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.73121,
+      "jpeg_to_top3_ms": 27.378086,
+      "top3": [
+        61,
+        80,
+        10
+      ],
+      "dishes": [
+        "lobster_roll_sandwich",
+        "pulled_pork_sandwich",
+        "bruschetta"
+      ],
+      "python_top3": [
+        61,
+        80,
+        10
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "lobster_roll_sandwich\/1863757",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 6.56457,
+      "jpeg_to_top3_ms": 11.001797,
+      "top3": [
+        61,
+        80,
+        10
+      ],
+      "dishes": [
+        "lobster_roll_sandwich",
+        "pulled_pork_sandwich",
+        "bruschetta"
+      ],
+      "python_top3": [
+        61,
+        80,
+        10
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "bibimbap\/83215",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.583594,
+      "jpeg_to_top3_ms": 8.424648,
+      "top3": [
+        7,
+        81,
+        88
+      ],
+      "dishes": [
+        "bibimbap",
+        "ramen",
+        "seaweed_salad"
+      ],
+      "python_top3": [
+        7,
+        81,
+        88
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "bibimbap\/83215",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.924258,
+      "jpeg_to_top3_ms": 25.668985,
+      "top3": [
+        7,
+        81,
+        88
+      ],
+      "dishes": [
+        "bibimbap",
+        "ramen",
+        "seaweed_salad"
+      ],
+      "python_top3": [
+        7,
+        81,
+        88
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "eggs_benedict\/1653071",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.205821,
+      "jpeg_to_top3_ms": 25.418007,
+      "top3": [
+        34,
+        13,
+        26
+      ],
+      "dishes": [
+        "eggs_benedict",
+        "caprese_salad",
+        "crab_cakes"
+      ],
+      "python_top3": [
+        34,
+        13,
+        26
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "eggs_benedict\/1653071",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.709023,
+      "jpeg_to_top3_ms": 9.125742,
+      "top3": [
+        34,
+        13,
+        26
+      ],
+      "dishes": [
+        "eggs_benedict",
+        "caprese_salad",
+        "crab_cakes"
+      ],
+      "python_top3": [
+        34,
+        13,
+        26
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ravioli\/3086649",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.872812,
+      "jpeg_to_top3_ms": 8.884883,
+      "top3": [
+        82,
+        91,
+        89
+      ],
+      "dishes": [
+        "ravioli",
+        "spaghetti_carbonara",
+        "shrimp_and_grits"
+      ],
+      "python_top3": [
+        82,
+        91,
+        89
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ravioli\/3086649",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.880938,
+      "jpeg_to_top3_ms": 26.507851,
+      "top3": [
+        82,
+        91,
+        89
+      ],
+      "dishes": [
+        "ravioli",
+        "spaghetti_carbonara",
+        "shrimp_and_grits"
+      ],
+      "python_top3": [
+        82,
+        91,
+        89
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "garlic_bread\/1799852",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.381719,
+      "jpeg_to_top3_ms": 25.616992,
+      "top3": [
+        46,
+        68,
+        10
+      ],
+      "dishes": [
+        "garlic_bread",
+        "onion_rings",
+        "bruschetta"
+      ],
+      "python_top3": [
+        46,
+        68,
+        10
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "garlic_bread\/1799852",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.823125,
+      "jpeg_to_top3_ms": 10.351055,
+      "top3": [
+        46,
+        68,
+        10
+      ],
+      "dishes": [
+        "garlic_bread",
+        "onion_rings",
+        "bruschetta"
+      ],
+      "python_top3": [
+        46,
+        68,
+        10
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "baklava\/2379083",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.988437,
+      "jpeg_to_top3_ms": 9.379766,
+      "top3": [
+        2,
+        85,
+        0
+      ],
+      "dishes": [
+        "baklava",
+        "samosa",
+        "apple_pie"
+      ],
+      "python_top3": [
+        2,
+        85,
+        0
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "baklava\/2379083",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.906446,
+      "jpeg_to_top3_ms": 27.589531,
+      "top3": [
+        2,
+        85,
+        0
+      ],
+      "dishes": [
+        "baklava",
+        "samosa",
+        "apple_pie"
+      ],
+      "python_top3": [
+        2,
+        85,
+        0
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "guacamole\/1407255",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.600039,
+      "jpeg_to_top3_ms": 25.976524,
+      "top3": [
+        51,
+        11,
+        18
+      ],
+      "dishes": [
+        "guacamole",
+        "caesar_salad",
+        "chicken_curry"
+      ],
+      "python_top3": [
+        51,
+        11,
+        18
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "guacamole\/1407255",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.620664,
+      "jpeg_to_top3_ms": 8.928672,
+      "top3": [
+        51,
+        11,
+        18
+      ],
+      "dishes": [
+        "guacamole",
+        "caesar_salad",
+        "chicken_curry"
+      ],
+      "python_top3": [
+        51,
+        11,
+        18
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cheese_plate\/1769785",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.889648,
+      "jpeg_to_top3_ms": 9.340156,
+      "top3": [
+        16,
+        34,
+        67
+      ],
+      "dishes": [
+        "cheese_plate",
+        "eggs_benedict",
+        "omelette"
+      ],
+      "python_top3": [
+        16,
+        34,
+        67
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cheese_plate\/1769785",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.617618,
+      "jpeg_to_top3_ms": 25.80875,
+      "top3": [
+        16,
+        34,
+        67
+      ],
+      "dishes": [
+        "cheese_plate",
+        "eggs_benedict",
+        "omelette"
+      ],
+      "python_top3": [
+        16,
+        34,
+        67
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "fish_and_chips\/2497717",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.122422,
+      "jpeg_to_top3_ms": 26.48668,
+      "top3": [
+        38,
+        97,
+        20
+      ],
+      "dishes": [
+        "fish_and_chips",
+        "takoyaki",
+        "chicken_wings"
+      ],
+      "python_top3": [
+        38,
+        97,
+        20
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "fish_and_chips\/2497717",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.165469,
+      "jpeg_to_top3_ms": 9.365821,
+      "top3": [
+        38,
+        97,
+        20
+      ],
+      "dishes": [
+        "fish_and_chips",
+        "takoyaki",
+        "chicken_wings"
+      ],
+      "python_top3": [
+        38,
+        97,
+        20
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "lasagna\/3437022",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.773438,
+      "jpeg_to_top3_ms": 9.169179,
+      "top3": [
+        59,
+        77,
+        93
+      ],
+      "dishes": [
+        "lasagna",
+        "pork_chop",
+        "steak"
+      ],
+      "python_top3": [
+        59,
+        77,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "lasagna\/3437022",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.174844,
+      "jpeg_to_top3_ms": 25.907657,
+      "top3": [
+        59,
+        93,
+        77
+      ],
+      "dishes": [
+        "lasagna",
+        "steak",
+        "pork_chop"
+      ],
+      "python_top3": [
+        59,
+        93,
+        77
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pizza\/2406842",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.601914,
+      "jpeg_to_top3_ms": 26.805196,
+      "top3": [
+        76,
+        67,
+        66
+      ],
+      "dishes": [
+        "pizza",
+        "omelette",
+        "nachos"
+      ],
+      "python_top3": [
+        76,
+        67,
+        66
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pizza\/2406842",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 7.613907,
+      "jpeg_to_top3_ms": 11.974961,
+      "top3": [
+        76,
+        67,
+        66
+      ],
+      "dishes": [
+        "pizza",
+        "omelette",
+        "nachos"
+      ],
+      "python_top3": [
+        76,
+        67,
+        66
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chocolate_mousse\/2868214",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.598554,
+      "jpeg_to_top3_ms": 8.188672,
+      "top3": [
+        21,
+        22,
+        39
+      ],
+      "dishes": [
+        "chocolate_cake",
+        "chocolate_mousse",
+        "foie_gras"
+      ],
+      "python_top3": [
+        21,
+        22,
+        39
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chocolate_mousse\/2868214",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.089922,
+      "jpeg_to_top3_ms": 25.71375,
+      "top3": [
+        21,
+        22,
+        39
+      ],
+      "dishes": [
+        "chocolate_cake",
+        "chocolate_mousse",
+        "foie_gras"
+      ],
+      "python_top3": [
+        21,
+        22,
+        39
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beignets\/1222571",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.515859,
+      "jpeg_to_top3_ms": 25.530274,
+      "top3": [
+        6,
+        9,
+        36
+      ],
+      "dishes": [
+        "beignets",
+        "breakfast_burrito",
+        "falafel"
+      ],
+      "python_top3": [
+        6,
+        9,
+        36
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beignets\/1222571",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.777773,
+      "jpeg_to_top3_ms": 9.574375,
+      "top3": [
+        6,
+        9,
+        36
+      ],
+      "dishes": [
+        "beignets",
+        "breakfast_burrito",
+        "falafel"
+      ],
+      "python_top3": [
+        6,
+        9,
+        36
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "clam_chowder\/3868218",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.638985,
+      "jpeg_to_top3_ms": 8.852226,
+      "top3": [
+        24,
+        60,
+        41
+      ],
+      "dishes": [
+        "clam_chowder",
+        "lobster_bisque",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        24,
+        60,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "clam_chowder\/3868218",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.319844,
+      "jpeg_to_top3_ms": 25.517852,
+      "top3": [
+        24,
+        60,
+        41
+      ],
+      "dishes": [
+        "clam_chowder",
+        "lobster_bisque",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        24,
+        60,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beet_salad\/177929",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.513164,
+      "jpeg_to_top3_ms": 27.965586,
+      "top3": [
+        5,
+        39,
+        13
+      ],
+      "dishes": [
+        "beet_salad",
+        "foie_gras",
+        "caprese_salad"
+      ],
+      "python_top3": [
+        5,
+        39,
+        13
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beet_salad\/177929",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 6.890547,
+      "jpeg_to_top3_ms": 11.635352,
+      "top3": [
+        5,
+        39,
+        13
+      ],
+      "dishes": [
+        "beet_salad",
+        "foie_gras",
+        "caprese_salad"
+      ],
+      "python_top3": [
+        5,
+        39,
+        13
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "spring_rolls\/3619897",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.650196,
+      "jpeg_to_top3_ms": 8.840859,
+      "top3": [
+        92,
+        38,
+        85
+      ],
+      "dishes": [
+        "spring_rolls",
+        "fish_and_chips",
+        "samosa"
+      ],
+      "python_top3": [
+        92,
+        38,
+        85
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "spring_rolls\/3619897",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.483789,
+      "jpeg_to_top3_ms": 25.8475,
+      "top3": [
+        92,
+        85,
+        38
+      ],
+      "dishes": [
+        "spring_rolls",
+        "samosa",
+        "fish_and_chips"
+      ],
+      "python_top3": [
+        92,
+        85,
+        38
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "onion_rings\/71645",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.974336,
+      "jpeg_to_top3_ms": 26.572969,
+      "top3": [
+        68,
+        43,
+        23
+      ],
+      "dishes": [
+        "onion_rings",
+        "fried_calamari",
+        "churros"
+      ],
+      "python_top3": [
+        68,
+        43,
+        23
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "onion_rings\/71645",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.070195,
+      "jpeg_to_top3_ms": 8.837344,
+      "top3": [
+        68,
+        43,
+        23
+      ],
+      "dishes": [
+        "onion_rings",
+        "fried_calamari",
+        "churros"
+      ],
+      "python_top3": [
+        68,
+        43,
+        23
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "red_velvet_cake\/1802478",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.815429,
+      "jpeg_to_top3_ms": 9.245039,
+      "top3": [
+        83,
+        98,
+        21
+      ],
+      "dishes": [
+        "red_velvet_cake",
+        "tiramisu",
+        "chocolate_cake"
+      ],
+      "python_top3": [
+        83,
+        98,
+        21
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "red_velvet_cake\/1802478",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.125,
+      "jpeg_to_top3_ms": 26.612696,
+      "top3": [
+        83,
+        98,
+        21
+      ],
+      "dishes": [
+        "red_velvet_cake",
+        "tiramisu",
+        "chocolate_cake"
+      ],
+      "python_top3": [
+        83,
+        98,
+        21
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chicken_quesadilla\/779730",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.800079,
+      "jpeg_to_top3_ms": 24.232578,
+      "top3": [
+        25,
+        19,
+        69
+      ],
+      "dishes": [
+        "club_sandwich",
+        "chicken_quesadilla",
+        "oysters"
+      ],
+      "python_top3": [
+        25,
+        19,
+        69
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chicken_quesadilla\/779730",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.844805,
+      "jpeg_to_top3_ms": 9.647109,
+      "top3": [
+        25,
+        19,
+        69
+      ],
+      "dishes": [
+        "club_sandwich",
+        "chicken_quesadilla",
+        "oysters"
+      ],
+      "python_top3": [
+        25,
+        19,
+        69
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pancakes\/470161",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.847305,
+      "jpeg_to_top3_ms": 10.190899,
+      "top3": [
+        72,
+        42,
+        56
+      ],
+      "dishes": [
+        "pancakes",
+        "french_toast",
+        "huevos_rancheros"
+      ],
+      "python_top3": [
+        72,
+        42,
+        56
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pancakes\/470161",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.540547,
+      "jpeg_to_top3_ms": 27.147304,
+      "top3": [
+        72,
+        42,
+        56
+      ],
+      "dishes": [
+        "pancakes",
+        "french_toast",
+        "huevos_rancheros"
+      ],
+      "python_top3": [
+        72,
+        42,
+        56
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "fried_calamari\/1021613",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.155195,
+      "jpeg_to_top3_ms": 26.468516,
+      "top3": [
+        43,
+        68,
+        73
+      ],
+      "dishes": [
+        "fried_calamari",
+        "onion_rings",
+        "panna_cotta"
+      ],
+      "python_top3": [
+        43,
+        68,
+        73
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "fried_calamari\/1021613",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 6.287227,
+      "jpeg_to_top3_ms": 10.542109,
+      "top3": [
+        43,
+        68,
+        73
+      ],
+      "dishes": [
+        "fried_calamari",
+        "onion_rings",
+        "panna_cotta"
+      ],
+      "python_top3": [
+        43,
+        68,
+        73
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "scallops\/457077",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.860703,
+      "jpeg_to_top3_ms": 8.577422,
+      "top3": [
+        87,
+        26,
+        24
+      ],
+      "dishes": [
+        "scallops",
+        "crab_cakes",
+        "clam_chowder"
+      ],
+      "python_top3": [
+        87,
+        26,
+        24
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "scallops\/457077",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.756836,
+      "jpeg_to_top3_ms": 25.54332,
+      "top3": [
+        87,
+        26,
+        24
+      ],
+      "dishes": [
+        "scallops",
+        "crab_cakes",
+        "clam_chowder"
+      ],
+      "python_top3": [
+        87,
+        26,
+        24
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chicken_wings\/3250522",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.910625,
+      "jpeg_to_top3_ms": 26.541055,
+      "top3": [
+        20,
+        1,
+        40
+      ],
+      "dishes": [
+        "chicken_wings",
+        "baby_back_ribs",
+        "french_fries"
+      ],
+      "python_top3": [
+        20,
+        1,
+        40
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "chicken_wings\/3250522",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.643984,
+      "jpeg_to_top3_ms": 9.152617,
+      "top3": [
+        20,
+        1,
+        40
+      ],
+      "dishes": [
+        "chicken_wings",
+        "baby_back_ribs",
+        "french_fries"
+      ],
+      "python_top3": [
+        20,
+        1,
+        40
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "apple_pie\/343461",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 8.041875,
+      "jpeg_to_top3_ms": 13.587539,
+      "top3": [
+        0,
+        49,
+        2
+      ],
+      "dishes": [
+        "apple_pie",
+        "grilled_cheese_sandwich",
+        "baklava"
+      ],
+      "python_top3": [
+        0,
+        49,
+        2
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "apple_pie\/343461",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.639844,
+      "jpeg_to_top3_ms": 24.08664,
+      "top3": [
+        0,
+        49,
+        2
+      ],
+      "dishes": [
+        "apple_pie",
+        "grilled_cheese_sandwich",
+        "baklava"
+      ],
+      "python_top3": [
+        0,
+        49,
+        2
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "tacos\/622425",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.630117,
+      "jpeg_to_top3_ms": 24.357265,
+      "top3": [
+        96,
+        11,
+        36
+      ],
+      "dishes": [
+        "tacos",
+        "caesar_salad",
+        "falafel"
+      ],
+      "python_top3": [
+        96,
+        11,
+        36
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "tacos\/622425",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.916406,
+      "jpeg_to_top3_ms": 9.704531,
+      "top3": [
+        96,
+        11,
+        36
+      ],
+      "dishes": [
+        "tacos",
+        "caesar_salad",
+        "falafel"
+      ],
+      "python_top3": [
+        96,
+        11,
+        36
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hummus\/868622",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.767968,
+      "jpeg_to_top3_ms": 8.218125,
+      "top3": [
+        86,
+        57,
+        75
+      ],
+      "dishes": [
+        "sashimi",
+        "hummus",
+        "pho"
+      ],
+      "python_top3": [
+        86,
+        57,
+        75
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hummus\/868622",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.253359,
+      "jpeg_to_top3_ms": 25.764375,
+      "top3": [
+        86,
+        57,
+        75
+      ],
+      "dishes": [
+        "sashimi",
+        "hummus",
+        "pho"
+      ],
+      "python_top3": [
+        86,
+        57,
+        75
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "takoyaki\/893088",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.754805,
+      "jpeg_to_top3_ms": 25.14,
+      "top3": [
+        97,
+        10,
+        7
+      ],
+      "dishes": [
+        "takoyaki",
+        "bruschetta",
+        "bibimbap"
+      ],
+      "python_top3": [
+        97,
+        10,
+        7
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "takoyaki\/893088",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.631836,
+      "jpeg_to_top3_ms": 9.005547,
+      "top3": [
+        97,
+        10,
+        6
+      ],
+      "dishes": [
+        "takoyaki",
+        "bruschetta",
+        "beignets"
+      ],
+      "python_top3": [
+        97,
+        10,
+        6
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hamburger\/2906568",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.282188,
+      "jpeg_to_top3_ms": 9.643203,
+      "top3": [
+        53,
+        99,
+        100
+      ],
+      "dishes": [
+        "hamburger",
+        "tuna_tartare",
+        "waffles"
+      ],
+      "python_top3": [
+        53,
+        99,
+        100
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hamburger\/2906568",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.369493,
+      "jpeg_to_top3_ms": 27.37793,
+      "top3": [
+        53,
+        99,
+        100
+      ],
+      "dishes": [
+        "hamburger",
+        "tuna_tartare",
+        "waffles"
+      ],
+      "python_top3": [
+        53,
+        99,
+        100
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "spaghetti_bolognese\/3248158",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.604493,
+      "jpeg_to_top3_ms": 26.301094,
+      "top3": [
+        90,
+        91,
+        93
+      ],
+      "dishes": [
+        "spaghetti_bolognese",
+        "spaghetti_carbonara",
+        "steak"
+      ],
+      "python_top3": [
+        90,
+        91,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "spaghetti_bolognese\/3248158",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.571836,
+      "jpeg_to_top3_ms": 8.820235,
+      "top3": [
+        90,
+        91,
+        93
+      ],
+      "dishes": [
+        "spaghetti_bolognese",
+        "spaghetti_carbonara",
+        "steak"
+      ],
+      "python_top3": [
+        90,
+        91,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "club_sandwich\/2369002",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.072657,
+      "jpeg_to_top3_ms": 9.731015,
+      "top3": [
+        25,
+        53,
+        36
+      ],
+      "dishes": [
+        "club_sandwich",
+        "hamburger",
+        "falafel"
+      ],
+      "python_top3": [
+        25,
+        53,
+        36
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "club_sandwich\/2369002",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.250234,
+      "jpeg_to_top3_ms": 25.934531,
+      "top3": [
+        25,
+        53,
+        94
+      ],
+      "dishes": [
+        "club_sandwich",
+        "hamburger",
+        "strawberry_shortcake"
+      ],
+      "python_top3": [
+        25,
+        53,
+        94
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "paella\/797855",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.095625,
+      "jpeg_to_top3_ms": 25.605781,
+      "top3": [
+        71,
+        65,
+        7
+      ],
+      "dishes": [
+        "paella",
+        "mussels",
+        "bibimbap"
+      ],
+      "python_top3": [
+        71,
+        65,
+        7
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "paella\/797855",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.722774,
+      "jpeg_to_top3_ms": 10.077344,
+      "top3": [
+        71,
+        65,
+        7
+      ],
+      "dishes": [
+        "paella",
+        "mussels",
+        "bibimbap"
+      ],
+      "python_top3": [
+        71,
+        65,
+        7
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "samosa\/144404",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 6.786015,
+      "jpeg_to_top3_ms": 10.28461,
+      "top3": [
+        85,
+        32,
+        52
+      ],
+      "dishes": [
+        "samosa",
+        "dumplings",
+        "gyoza"
+      ],
+      "python_top3": [
+        85,
+        32,
+        52
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "samosa\/144404",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.832265,
+      "jpeg_to_top3_ms": 24.140899,
+      "top3": [
+        85,
+        52,
+        32
+      ],
+      "dishes": [
+        "samosa",
+        "gyoza",
+        "dumplings"
+      ],
+      "python_top3": [
+        85,
+        52,
+        32
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pork_chop\/3661948",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.448164,
+      "jpeg_to_top3_ms": 25.751484,
+      "top3": [
+        77,
+        37,
+        93
+      ],
+      "dishes": [
+        "pork_chop",
+        "filet_mignon",
+        "steak"
+      ],
+      "python_top3": [
+        77,
+        37,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pork_chop\/3661948",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 7.289336,
+      "jpeg_to_top3_ms": 12.046758,
+      "top3": [
+        77,
+        37,
+        93
+      ],
+      "dishes": [
+        "pork_chop",
+        "filet_mignon",
+        "steak"
+      ],
+      "python_top3": [
+        77,
+        37,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "miso_soup\/3218344",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 6.247226,
+      "jpeg_to_top3_ms": 9.009454,
+      "top3": [
+        54,
+        64,
+        15
+      ],
+      "dishes": [
+        "hot_and_sour_soup",
+        "miso_soup",
+        "ceviche"
+      ],
+      "python_top3": [
+        54,
+        64,
+        15
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "miso_soup\/3218344",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.822071,
+      "jpeg_to_top3_ms": 25.460782,
+      "top3": [
+        54,
+        64,
+        15
+      ],
+      "dishes": [
+        "hot_and_sour_soup",
+        "miso_soup",
+        "ceviche"
+      ],
+      "python_top3": [
+        54,
+        64,
+        15
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cup_cakes\/198629",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.677265,
+      "jpeg_to_top3_ms": 24.732109,
+      "top3": [
+        29,
+        83,
+        21
+      ],
+      "dishes": [
+        "cup_cakes",
+        "red_velvet_cake",
+        "chocolate_cake"
+      ],
+      "python_top3": [
+        29,
+        83,
+        21
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cup_cakes\/198629",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.611289,
+      "jpeg_to_top3_ms": 8.047422,
+      "top3": [
+        29,
+        83,
+        21
+      ],
+      "dishes": [
+        "cup_cakes",
+        "red_velvet_cake",
+        "chocolate_cake"
+      ],
+      "python_top3": [
+        29,
+        83,
+        21
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "creme_brulee\/856848",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.709297,
+      "jpeg_to_top3_ms": 9.180195,
+      "top3": [
+        41,
+        35,
+        27
+      ],
+      "dishes": [
+        "french_onion_soup",
+        "escargots",
+        "creme_brulee"
+      ],
+      "python_top3": [
+        41,
+        35,
+        27
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "creme_brulee\/856848",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.249219,
+      "jpeg_to_top3_ms": 25.697266,
+      "top3": [
+        41,
+        35,
+        27
+      ],
+      "dishes": [
+        "french_onion_soup",
+        "escargots",
+        "creme_brulee"
+      ],
+      "python_top3": [
+        41,
+        35,
+        27
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "shrimp_and_grits\/552618",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 22.086875,
+      "jpeg_to_top3_ms": 26.373437,
+      "top3": [
+        89,
+        47,
+        62
+      ],
+      "dishes": [
+        "shrimp_and_grits",
+        "gnocchi",
+        "macaroni_and_cheese"
+      ],
+      "python_top3": [
+        89,
+        47,
+        62
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "shrimp_and_grits\/552618",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.621094,
+      "jpeg_to_top3_ms": 9.073711,
+      "top3": [
+        89,
+        47,
+        62
+      ],
+      "dishes": [
+        "shrimp_and_grits",
+        "gnocchi",
+        "macaroni_and_cheese"
+      ],
+      "python_top3": [
+        89,
+        47,
+        62
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "tiramisu\/2026255",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.007656,
+      "jpeg_to_top3_ms": 9.361953,
+      "top3": [
+        98,
+        49,
+        14
+      ],
+      "dishes": [
+        "tiramisu",
+        "grilled_cheese_sandwich",
+        "carrot_cake"
+      ],
+      "python_top3": [
+        98,
+        49,
+        14
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "tiramisu\/2026255",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.077929,
+      "jpeg_to_top3_ms": 25.62,
+      "top3": [
+        98,
+        14,
+        49
+      ],
+      "dishes": [
+        "tiramisu",
+        "carrot_cake",
+        "grilled_cheese_sandwich"
+      ],
+      "python_top3": [
+        98,
+        14,
+        49
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beef_tartare\/3095479",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.869609,
+      "jpeg_to_top3_ms": 25.186289,
+      "top3": [
+        4,
+        5,
+        50
+      ],
+      "dishes": [
+        "beef_tartare",
+        "beet_salad",
+        "grilled_salmon"
+      ],
+      "python_top3": [
+        4,
+        5,
+        50
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beef_tartare\/3095479",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.66414,
+      "jpeg_to_top3_ms": 9.275313,
+      "top3": [
+        4,
+        5,
+        50
+      ],
+      "dishes": [
+        "beef_tartare",
+        "beet_salad",
+        "grilled_salmon"
+      ],
+      "python_top3": [
+        4,
+        5,
+        50
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hot_and_sour_soup\/1134579",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.079336,
+      "jpeg_to_top3_ms": 8.704883,
+      "top3": [
+        54,
+        75,
+        41
+      ],
+      "dishes": [
+        "hot_and_sour_soup",
+        "pho",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        54,
+        75,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "hot_and_sour_soup\/1134579",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.39789,
+      "jpeg_to_top3_ms": 25.156211,
+      "top3": [
+        54,
+        75,
+        41
+      ],
+      "dishes": [
+        "hot_and_sour_soup",
+        "pho",
+        "french_onion_soup"
+      ],
+      "python_top3": [
+        54,
+        75,
+        41
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pho\/1217919",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.910234,
+      "jpeg_to_top3_ms": 25.448672,
+      "top3": [
+        75,
+        54,
+        70
+      ],
+      "dishes": [
+        "pho",
+        "hot_and_sour_soup",
+        "pad_thai"
+      ],
+      "python_top3": [
+        75,
+        54,
+        70
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "pho\/1217919",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.685039,
+      "jpeg_to_top3_ms": 9.455078,
+      "top3": [
+        75,
+        54,
+        70
+      ],
+      "dishes": [
+        "pho",
+        "hot_and_sour_soup",
+        "pad_thai"
+      ],
+      "python_top3": [
+        75,
+        54,
+        70
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "caesar_salad\/2070814",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.302968,
+      "jpeg_to_top3_ms": 9.024883,
+      "top3": [
+        11,
+        5,
+        96
+      ],
+      "dishes": [
+        "caesar_salad",
+        "beet_salad",
+        "tacos"
+      ],
+      "python_top3": [
+        11,
+        5,
+        96
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "caesar_salad\/2070814",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.309649,
+      "jpeg_to_top3_ms": 24.916719,
+      "top3": [
+        11,
+        5,
+        96
+      ],
+      "dishes": [
+        "caesar_salad",
+        "beet_salad",
+        "tacos"
+      ],
+      "python_top3": [
+        11,
+        5,
+        96
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "oysters\/168218",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.765508,
+      "jpeg_to_top3_ms": 24.623985,
+      "top3": [
+        37,
+        93,
+        36
+      ],
+      "dishes": [
+        "filet_mignon",
+        "steak",
+        "falafel"
+      ],
+      "python_top3": [
+        37,
+        93,
+        36
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "oysters\/168218",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.680742,
+      "jpeg_to_top3_ms": 8.37043,
+      "top3": [
+        37,
+        36,
+        93
+      ],
+      "dishes": [
+        "filet_mignon",
+        "falafel",
+        "steak"
+      ],
+      "python_top3": [
+        37,
+        36,
+        93
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "sashimi\/1225779",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.936446,
+      "jpeg_to_top3_ms": 9.82039,
+      "top3": [
+        86,
+        95,
+        79
+      ],
+      "dishes": [
+        "sashimi",
+        "sushi",
+        "prime_rib"
+      ],
+      "python_top3": [
+        86,
+        95,
+        79
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "sashimi\/1225779",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.186719,
+      "jpeg_to_top3_ms": 28.895625,
+      "top3": [
+        86,
+        95,
+        79
+      ],
+      "dishes": [
+        "sashimi",
+        "sushi",
+        "prime_rib"
+      ],
+      "python_top3": [
+        86,
+        95,
+        79
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "caprese_salad\/2118947",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 20.732422,
+      "jpeg_to_top3_ms": 25.262578,
+      "top3": [
+        13,
+        48,
+        16
+      ],
+      "dishes": [
+        "caprese_salad",
+        "greek_salad",
+        "cheese_plate"
+      ],
+      "python_top3": [
+        13,
+        48,
+        16
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "caprese_salad\/2118947",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.435273,
+      "jpeg_to_top3_ms": 9.708554,
+      "top3": [
+        13,
+        48,
+        16
+      ],
+      "dishes": [
+        "caprese_salad",
+        "greek_salad",
+        "cheese_plate"
+      ],
+      "python_top3": [
+        13,
+        48,
+        16
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cheesecake\/1725587",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 4.755273,
+      "jpeg_to_top3_ms": 9.027773,
+      "top3": [
+        94,
+        17,
+        98
+      ],
+      "dishes": [
+        "strawberry_shortcake",
+        "cheesecake",
+        "tiramisu"
+      ],
+      "python_top3": [
+        94,
+        17,
+        98
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "cheesecake\/1725587",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 20.980664,
+      "jpeg_to_top3_ms": 25.243594,
+      "top3": [
+        94,
+        17,
+        98
+      ],
+      "dishes": [
+        "strawberry_shortcake",
+        "cheesecake",
+        "tiramisu"
+      ],
+      "python_top3": [
+        94,
+        17,
+        98
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "croque_madame\/940149",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 24.246055,
+      "jpeg_to_top3_ms": 28.743906,
+      "top3": [
+        28,
+        56,
+        34
+      ],
+      "dishes": [
+        "croque_madame",
+        "huevos_rancheros",
+        "eggs_benedict"
+      ],
+      "python_top3": [
+        28,
+        56,
+        34
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "croque_madame\/940149",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.245312,
+      "jpeg_to_top3_ms": 9.84832,
+      "top3": [
+        28,
+        56,
+        34
+      ],
+      "dishes": [
+        "croque_madame",
+        "huevos_rancheros",
+        "eggs_benedict"
+      ],
+      "python_top3": [
+        28,
+        56,
+        34
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "donuts\/361877",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.270117,
+      "jpeg_to_top3_ms": 9.397735,
+      "top3": [
+        31,
+        29,
+        37
+      ],
+      "dishes": [
+        "donuts",
+        "cup_cakes",
+        "filet_mignon"
+      ],
+      "python_top3": [
+        31,
+        29,
+        37
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "donuts\/361877",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 23.37836,
+      "jpeg_to_top3_ms": 27.503946,
+      "top3": [
+        31,
+        29,
+        53
+      ],
+      "dishes": [
+        "donuts",
+        "cup_cakes",
+        "hamburger"
+      ],
+      "python_top3": [
+        31,
+        29,
+        53
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "escargots\/3803422",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.811406,
+      "jpeg_to_top3_ms": 26.531719,
+      "top3": [
+        35,
+        97,
+        32
+      ],
+      "dishes": [
+        "escargots",
+        "takoyaki",
+        "dumplings"
+      ],
+      "python_top3": [
+        35,
+        97,
+        32
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "escargots\/3803422",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 5.418867,
+      "jpeg_to_top3_ms": 9.857383,
+      "top3": [
+        35,
+        97,
+        32
+      ],
+      "dishes": [
+        "escargots",
+        "takoyaki",
+        "dumplings"
+      ],
+      "python_top3": [
+        35,
+        97,
+        32
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "strawberry_shortcake\/1196710",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.209609,
+      "jpeg_to_top3_ms": 9.495196,
+      "top3": [
+        94,
+        17,
+        27
+      ],
+      "dishes": [
+        "strawberry_shortcake",
+        "cheesecake",
+        "creme_brulee"
+      ],
+      "python_top3": [
+        94,
+        17,
+        27
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "strawberry_shortcake\/1196710",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 22.327695,
+      "jpeg_to_top3_ms": 26.873789,
+      "top3": [
+        94,
+        17,
+        27
+      ],
+      "dishes": [
+        "strawberry_shortcake",
+        "cheesecake",
+        "creme_brulee"
+      ],
+      "python_top3": [
+        94,
+        17,
+        27
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beef_carpaccio\/3889985",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.066484,
+      "jpeg_to_top3_ms": 25.727148,
+      "top3": [
+        3,
+        4,
+        99
+      ],
+      "dishes": [
+        "beef_carpaccio",
+        "beef_tartare",
+        "tuna_tartare"
+      ],
+      "python_top3": [
+        3,
+        4,
+        99
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "beef_carpaccio\/3889985",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.781054,
+      "jpeg_to_top3_ms": 9.279766,
+      "top3": [
+        3,
+        4,
+        99
+      ],
+      "dishes": [
+        "beef_carpaccio",
+        "beef_tartare",
+        "tuna_tartare"
+      ],
+      "python_top3": [
+        3,
+        4,
+        99
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "carrot_cake\/2894362",
+      "model": "resnet18_int8",
+      "position": 0,
+      "forward_ms": 5.617187,
+      "jpeg_to_top3_ms": 9.467421,
+      "top3": [
+        14,
+        98,
+        83
+      ],
+      "dishes": [
+        "carrot_cake",
+        "tiramisu",
+        "red_velvet_cake"
+      ],
+      "python_top3": [
+        14,
+        98,
+        83
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "carrot_cake\/2894362",
+      "model": "resnet18_fp32",
+      "position": 1,
+      "forward_ms": 21.59707,
+      "jpeg_to_top3_ms": 25.444257,
+      "top3": [
+        14,
+        98,
+        83
+      ],
+      "dishes": [
+        "carrot_cake",
+        "tiramisu",
+        "red_velvet_cake"
+      ],
+      "python_top3": [
+        14,
+        98,
+        83
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ramen\/3242614",
+      "model": "resnet18_fp32",
+      "position": 0,
+      "forward_ms": 21.651601,
+      "jpeg_to_top3_ms": 25.380117,
+      "top3": [
+        81,
+        56,
+        18
+      ],
+      "dishes": [
+        "ramen",
+        "huevos_rancheros",
+        "chicken_curry"
+      ],
+      "python_top3": [
+        81,
+        56,
+        18
+      ],
+      "ordered_match": true
+    },
+    {
+      "id": "ramen\/3242614",
+      "model": "resnet18_int8",
+      "position": 1,
+      "forward_ms": 4.789062,
+      "jpeg_to_top3_ms": 8.48582,
+      "top3": [
+        81,
+        56,
+        18
+      ],
+      "dishes": [
+        "ramen",
+        "huevos_rancheros",
+        "chicken_curry"
+      ],
+      "python_top3": [
+        81,
+        56,
+        18
+      ],
+      "ordered_match": true
+    }
+  ]
+}

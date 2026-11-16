@@ -1,0 +1,207 @@
+{
+  "phase": "pilot",
+  "images": 505,
+  "warmup_per_model": 20,
+  "manifest_sha256": "43ba6ffe5f625d8a1a441dc96e7a24252096ee9b29e2a37e895c1b74434d2a41",
+  "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+  "os": "Windows-10-10.0.19045-SP0",
+  "batch": 1,
+  "dtype": "FP32",
+  "intraop_threads": 4,
+  "interop_threads": 1,
+  "torch": "2.5.1+cpu",
+  "torchvision": "0.20.1+cpu",
+  "pillow": "11.3.0",
+  "latency_unit": "ms",
+  "file_cache": "warm (every file hash verified before timing)",
+  "end_to_end": "local file open through three class names; excludes model loading and network",
+  "profiled_forwards_per_model": 3,
+  "models": {
+    "teacher": {
+      "parameters": 23714981,
+      "weights_sha256": "9e3df3a516df3ff8c67052ec66f7aed901e1f22943d704258aa5d9b31b3dfa20",
+      "stages": {
+        "decode": {
+          "median": 3.019,
+          "p95": 5.3188,
+          "percent_of_elapsed": 3.2014578960842663
+        },
+        "preprocess": {
+          "median": 3.2143,
+          "p95": 5.083739999999997,
+          "percent_of_elapsed": 3.137755990621131
+        },
+        "forward": {
+          "median": 102.6202,
+          "p95": 155.93015999999986,
+          "percent_of_elapsed": 93.61636651472007
+        },
+        "top3": {
+          "median": 0.0468,
+          "p95": 0.08643999999999995,
+          "percent_of_elapsed": 0.044419598574470844
+        },
+        "end_to_end": {
+          "median": 109.2357,
+          "p95": 171.68071999999975,
+          "percent_of_elapsed": 100.0
+        }
+      },
+      "profile": [
+        {
+          "operator": "aten::mkldnn_convolution",
+          "calls": 159,
+          "self_ms": 221.6927000000001,
+          "percent_of_profile_self_time": 73.0764552565853
+        },
+        {
+          "operator": "aten::native_batch_norm",
+          "calls": 159,
+          "self_ms": 14.823400000000852,
+          "percent_of_profile_self_time": 4.886230024040161
+        },
+        {
+          "operator": "aten::max_pool2d_with_indices",
+          "calls": 3,
+          "self_ms": 10.921600000000009,
+          "percent_of_profile_self_time": 3.6000816162657694
+        },
+        {
+          "operator": "aten::add_",
+          "calls": 48,
+          "self_ms": 4.6322000000000045,
+          "percent_of_profile_self_time": 1.5269097991930027
+        },
+        {
+          "operator": "aten::clamp_min_",
+          "calls": 147,
+          "self_ms": 4.345399999999969,
+          "percent_of_profile_self_time": 1.4323720567793314
+        },
+        {
+          "operator": "aten::empty",
+          "calls": 1272,
+          "self_ms": 2.2751999999989714,
+          "percent_of_profile_self_time": 0.749973052787519
+        },
+        {
+          "operator": "aten::_convolution",
+          "calls": 159,
+          "self_ms": 1.8312999999999848,
+          "percent_of_profile_self_time": 0.6036505149307284
+        },
+        {
+          "operator": "aten::_batch_norm_impl_index",
+          "calls": 159,
+          "self_ms": 1.8085000000000546,
+          "percent_of_profile_self_time": 0.5961349621865693
+        },
+        {
+          "operator": "aten::conv2d",
+          "calls": 159,
+          "self_ms": 1.046700000000208,
+          "percent_of_profile_self_time": 0.3450232042691663
+        },
+        {
+          "operator": "aten::convolution",
+          "calls": 159,
+          "self_ms": 1.0330999999999513,
+          "percent_of_profile_self_time": 0.3405402429830783
+        }
+      ]
+    },
+    "student_init": {
+      "parameters": 11228325,
+      "weights_sha256": "b2e041a222c0d46528b78cdd82d84a9b764967cbb5ef2c3c2ccf3ddf6571c452",
+      "stages": {
+        "decode": {
+          "median": 2.9689,
+          "p95": 5.333559999999998,
+          "percent_of_elapsed": 7.116332717634224
+        },
+        "preprocess": {
+          "median": 3.1841,
+          "p95": 4.7737199999999955,
+          "percent_of_elapsed": 6.312052824086223
+        },
+        "forward": {
+          "median": 42.5636,
+          "p95": 61.67017999999998,
+          "percent_of_elapsed": 86.47273684830759
+        },
+        "top3": {
+          "median": 0.0455,
+          "p95": 0.08263999999999995,
+          "percent_of_elapsed": 0.09887760997199072
+        },
+        "end_to_end": {
+          "median": 48.8722,
+          "p95": 75.14511999999993,
+          "percent_of_elapsed": 100.0
+        }
+      },
+      "profile": [
+        {
+          "operator": "aten::mkldnn_convolution",
+          "calls": 60,
+          "self_ms": 127.64839999999975,
+          "percent_of_profile_self_time": 65.82589978661092
+        },
+        {
+          "operator": "aten::max_pool2d_with_indices",
+          "calls": 3,
+          "self_ms": 29.661499999999993,
+          "percent_of_profile_self_time": 15.295882490658427
+        },
+        {
+          "operator": "aten::native_batch_norm",
+          "calls": 60,
+          "self_ms": 9.150399999999868,
+          "percent_of_profile_self_time": 4.718690664414102
+        },
+        {
+          "operator": "aten::clamp_min_",
+          "calls": 51,
+          "self_ms": 4.312899999999907,
+          "percent_of_profile_self_time": 2.22408211297336
+        },
+        {
+          "operator": "aten::addmm",
+          "calls": 3,
+          "self_ms": 3.090699999999997,
+          "percent_of_profile_self_time": 1.5938163617442802
+        },
+        {
+          "operator": "aten::empty",
+          "calls": 480,
+          "self_ms": 1.2137000000000506,
+          "percent_of_profile_self_time": 0.625882459717577
+        },
+        {
+          "operator": "aten::_convolution",
+          "calls": 60,
+          "self_ms": 0.9781000000001222,
+          "percent_of_profile_self_time": 0.5043879326438272
+        },
+        {
+          "operator": "aten::_batch_norm_impl_index",
+          "calls": 60,
+          "self_ms": 0.9090999999999494,
+          "percent_of_profile_self_time": 0.46880591919683107
+        },
+        {
+          "operator": "aten::add_",
+          "calls": 24,
+          "self_ms": 0.8608999999999942,
+          "percent_of_profile_self_time": 0.4439500779194496
+        },
+        {
+          "operator": "aten::conv2d",
+          "calls": 60,
+          "self_ms": 0.7941999999998861,
+          "percent_of_profile_self_time": 0.40955413158738385
+        }
+      ]
+    }
+  }
+}

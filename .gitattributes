@@ -1,0 +1,5 @@
+# Several manifests, label files and reference predictions are verified byte for byte.
+*.csv -text
+*.json -text
+*.txt -text
+android/gradlew text eol=lf

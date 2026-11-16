@@ -1,0 +1,30 @@
+{
+  "model": "resnet50_food101_best.pt",
+  "checkpoint_sha256": "9e3df3a516df3ff8c67052ec66f7aed901e1f22943d704258aa5d9b31b3dfa20",
+  "classes_match_dataset": true,
+  "class_count": 101,
+  "archive_text_order_differences": [
+    {
+      "index": 16,
+      "archive": "cheesecake",
+      "dataset": "cheese_plate"
+    },
+    {
+      "index": 17,
+      "archive": "cheese_plate",
+      "dataset": "cheesecake"
+    }
+  ],
+  "classes_sha256": "efe7060c0e6aa88c98d3ad9532240013747f6b2179d45e1f750527890437c59d",
+  "test_manifest_sha256": "440d53374697d019a972fe66e8e44031ae80267a126ecb814ad537ec1fd506db",
+  "samples": 25250,
+  "top1_correct": 21689,
+  "top3_correct": 24032,
+  "top1_percent": 85.8970297029703,
+  "top3_percent": 95.17623762376238,
+  "parameters": 23714981,
+  "device": "cuda",
+  "dtype": "float32",
+  "tf32": false,
+  "seconds": 32.67829590200017
+}

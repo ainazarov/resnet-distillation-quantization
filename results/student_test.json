@@ -1,0 +1,24 @@
+{
+  "models": {
+    "plain": {
+      "n": 25250,
+      "top1_correct": 20537,
+      "top3_correct": 23477,
+      "top1": 0.8133465346534653,
+      "top3": 0.9297821782178218
+    },
+    "distilled": {
+      "n": 25250,
+      "top1_correct": 20817,
+      "top3_correct": 23641,
+      "top1": 0.8244356435643564,
+      "top3": 0.9362772277227723
+    }
+  },
+  "checkpoints_sha256": {
+    "plain": "a43b8b6793379933f7920334008431e8f483db8753a251a55a08609d929302e5",
+    "distilled": "e3fa7754e35a355b561af8aefc625445a634d61704f714ad37ffd2736874194c"
+  },
+  "precision": "FP32",
+  "predictions_sha256": "64e2791a03fdf41e126b1da2c16c2a3ca3590759ddacf5b4d797ad3a9156f938"
+}

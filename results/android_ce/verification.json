@@ -1,0 +1,24 @@
+{
+  "series": "C",
+  "accepted_file": "galaxy-s24-plus.json",
+  "accepted_sha256": "402c40379827d9d24ef08e37fc95514db035b284b67253d57bd04dd81354fdc1",
+  "timezone": "UTC+03:00",
+  "activity": "org.fooddiary.benchmark.ce/org.fooddiary.benchmark.MainActivity",
+  "foreground_verification": {
+    "source": "Android events log, activity callbacks for the benchmark process",
+    "last_resume": "2026-11-16T15:11:01.424+03:00",
+    "run_start": "2026-11-16T15:11:07.013+03:00",
+    "run_end": "2026-11-16T15:11:12.158+03:00",
+    "pause_during_run": false
+  },
+  "rows_checked": 202,
+  "jpeg_ids_match_series_a": true,
+  "per_model_verified": [
+    "PTE SHA-256 matches export",
+    "PTE byte size matches export",
+    "101 ordered top-3 predictions agree with Python",
+    "median forward and end-to-end p95 recomputed from raw rows"
+  ],
+  "excluded_file": "excluded-background.json",
+  "exclusion_reason": "Android activity paused at 15:07:30.846 during this earlier attempt (15:07:29.764 to 15:07:52.495). It was excluded before the foreground rerun."
+}

@@ -1,0 +1,1841 @@
+{
+  "format_version": 1,
+  "runtime": {
+    "executorch": "1.5.1",
+    "torch": "2.14.0+cpu",
+    "torchvision": "0.29.0+cpu",
+    "pillow": "13.0.0"
+  },
+  "source_manifest_sha256": "43ba6ffe5f625d8a1a441dc96e7a24252096ee9b29e2a37e895c1b74434d2a41",
+  "classes_sha256": "efe7060c0e6aa88c98d3ad9532240013747f6b2179d45e1f750527890437c59d",
+  "checkpoint_sha256": {
+    "resnet18_fp32": "e3fa7754e35a355b561af8aefc625445a634d61704f714ad37ffd2736874194c",
+    "resnet18_int8": "e3fa7754e35a355b561af8aefc625445a634d61704f714ad37ffd2736874194c"
+  },
+  "selection": "Lowest JPEG SHA-256 per class in the verified 505-image laptop manifest, shuffled with seed 42.",
+  "photos": [
+    {
+      "id": "fried_rice/3331345",
+      "asset": "photos/044.jpg",
+      "label": 44,
+      "sha256": "0deafd59f1b9e7deb4334af6059e6874a5fa093dae270e5c0648e3a18a14ba7d",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        44,
+        71,
+        14
+      ],
+      "resnet18_int8": [
+        44,
+        71,
+        14
+      ]
+    },
+    {
+      "id": "dumplings/2630977",
+      "asset": "photos/032.jpg",
+      "label": 32,
+      "sha256": "3231741e5715e501fb1ab631b781849c23a29415a3acd4aed498f3fede4e9b70",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        32,
+        76,
+        7
+      ],
+      "resnet18_int8": [
+        32,
+        76,
+        86
+      ]
+    },
+    {
+      "id": "macarons/3166758",
+      "asset": "photos/063.jpg",
+      "label": 63,
+      "sha256": "34ad2c6d091f96f79112b0121add0a3b11786cb88cc95b6dc922e46b8c9adb99",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        63,
+        94,
+        98
+      ],
+      "resnet18_int8": [
+        63,
+        94,
+        98
+      ]
+    },
+    {
+      "id": "breakfast_burrito/140461",
+      "asset": "photos/009.jpg",
+      "label": 9,
+      "sha256": "48c70747970ceed8a97e2e553d2166935c57137dada78d4a24f1a12d5a079721",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        10,
+        17,
+        9
+      ],
+      "resnet18_int8": [
+        10,
+        17,
+        9
+      ]
+    },
+    {
+      "id": "nachos/121508",
+      "asset": "photos/066.jpg",
+      "label": 66,
+      "sha256": "0b14e5a674933b342f44b1a35f1619704db02b30c0889417d1241a8e5bae7e26",
+      "width": 382,
+      "height": 512,
+      "resnet18_fp32": [
+        66,
+        96,
+        56
+      ],
+      "resnet18_int8": [
+        66,
+        96,
+        56
+      ]
+    },
+    {
+      "id": "deviled_eggs/1642423",
+      "asset": "photos/030.jpg",
+      "label": 30,
+      "sha256": "273042b75da54358e27220693955ef5ad9566d1ed51e3bad424f4bbbb4000da7",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        30,
+        87,
+        16
+      ],
+      "resnet18_int8": [
+        30,
+        87,
+        16
+      ]
+    },
+    {
+      "id": "baby_back_ribs/519489",
+      "asset": "photos/001.jpg",
+      "label": 1,
+      "sha256": "179531ddb312403eece8db64a43365b558c6be3e5385192588f43e1a2387fffd",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        1,
+        96,
+        66
+      ],
+      "resnet18_int8": [
+        1,
+        66,
+        96
+      ]
+    },
+    {
+      "id": "poutine/2312311",
+      "asset": "photos/078.jpg",
+      "label": 78,
+      "sha256": "28ace57222cfcec8d908645c01d107bc7b1d56a73e9c0c44675cee498744fc82",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        47,
+        82,
+        10
+      ],
+      "resnet18_int8": [
+        47,
+        82,
+        10
+      ]
+    },
+    {
+      "id": "ceviche/826746",
+      "asset": "photos/015.jpg",
+      "label": 15,
+      "sha256": "18b5b832ed118cfdf0aaeb65ad48cf907a449530fcf53b09676749f8526e411f",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        15,
+        87,
+        96
+      ],
+      "resnet18_int8": [
+        15,
+        87,
+        89
+      ]
+    },
+    {
+      "id": "prime_rib/3260842",
+      "asset": "photos/079.jpg",
+      "label": 79,
+      "sha256": "6616ed4f04c8be39647e58d9d56d7ba1ee4ae2192f2d4ea046f8f958318cd4c9",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        79,
+        93,
+        77
+      ],
+      "resnet18_int8": [
+        79,
+        93,
+        77
+      ]
+    },
+    {
+      "id": "panna_cotta/3746420",
+      "asset": "photos/073.jpg",
+      "label": 73,
+      "sha256": "52f0e0a7f49930b29e271d07044e29eaac0975d132970552bc52c5421c5cb122",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        73,
+        17,
+        13
+      ],
+      "resnet18_int8": [
+        73,
+        17,
+        13
+      ]
+    },
+    {
+      "id": "bruschetta/642089",
+      "asset": "photos/010.jpg",
+      "label": 10,
+      "sha256": "0c243dfe5f9004266634d4b99e5019ffa491806c12d35989a1a3db3c4b19c1b5",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        10,
+        42,
+        31
+      ],
+      "resnet18_int8": [
+        10,
+        42,
+        31
+      ]
+    },
+    {
+      "id": "waffles/1648664",
+      "asset": "photos/100.jpg",
+      "label": 100,
+      "sha256": "103779287f2f2d4e021f4230a91f1f62143a5f8655370e4bf4ebfa45824b767a",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        100,
+        82,
+        87
+      ],
+      "resnet18_int8": [
+        100,
+        82,
+        47
+      ]
+    },
+    {
+      "id": "french_toast/1849074",
+      "asset": "photos/042.jpg",
+      "label": 42,
+      "sha256": "12053d25f68b5dc465385d08c91e8ea3fb194fc1a118ac068def55fc286fd520",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        42,
+        31,
+        16
+      ],
+      "resnet18_int8": [
+        42,
+        31,
+        16
+      ]
+    },
+    {
+      "id": "hot_dog/67755",
+      "asset": "photos/055.jpg",
+      "label": 55,
+      "sha256": "3c5b06962cd85c0918b03e3cd3b749ef746794da061db1e972a9d8d2895bfefb",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        55,
+        53,
+        61
+      ],
+      "resnet18_int8": [
+        55,
+        53,
+        61
+      ]
+    },
+    {
+      "id": "french_onion_soup/801168",
+      "asset": "photos/041.jpg",
+      "label": 41,
+      "sha256": "1dd76da330f94879392a787a9402f43f815c6fbdfe90bb5905890025e66f0a63",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        41,
+        59,
+        27
+      ],
+      "resnet18_int8": [
+        41,
+        59,
+        27
+      ]
+    },
+    {
+      "id": "grilled_cheese_sandwich/226046",
+      "asset": "photos/049.jpg",
+      "label": 49,
+      "sha256": "11d6cc468878697e9b4711191c394717a7ca66f00a985fed47419147643a3c3b",
+      "width": 382,
+      "height": 512,
+      "resnet18_fp32": [
+        49,
+        98,
+        25
+      ],
+      "resnet18_int8": [
+        49,
+        98,
+        25
+      ]
+    },
+    {
+      "id": "sushi/1245193",
+      "asset": "photos/095.jpg",
+      "label": 95,
+      "sha256": "77d0db13939e092baed6793304c2dfa63026e0e63638e23bbf0d9b29310d2262",
+      "width": 512,
+      "height": 295,
+      "resnet18_fp32": [
+        95,
+        86,
+        76
+      ],
+      "resnet18_int8": [
+        95,
+        86,
+        76
+      ]
+    },
+    {
+      "id": "peking_duck/3020706",
+      "asset": "photos/074.jpg",
+      "label": 74,
+      "sha256": "3c9ba9475eb4a8663a306ee7cfb153dcf3e812e3766443ad6ca0f941ebb9b7ac",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        7,
+        70,
+        80
+      ],
+      "resnet18_int8": [
+        7,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "huevos_rancheros/728966",
+      "asset": "photos/056.jpg",
+      "label": 56,
+      "sha256": "0df993bcf7ec2175acd431f66ebf2b4a755655c39139807d2c18a5ded978b4e3",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        56,
+        59,
+        7
+      ],
+      "resnet18_int8": [
+        56,
+        59,
+        7
+      ]
+    },
+    {
+      "id": "ice_cream/2005858",
+      "asset": "photos/058.jpg",
+      "label": 58,
+      "sha256": "51c04de8bf2ced71078ffc44544e0c73f31fc4a495213318ddc90fe8be4f5953",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        58,
+        22,
+        21
+      ],
+      "resnet18_int8": [
+        58,
+        22,
+        21
+      ]
+    },
+    {
+      "id": "bread_pudding/423174",
+      "asset": "photos/008.jpg",
+      "label": 8,
+      "sha256": "327d6be2a44812b8b576af8ebd94c8ebc53fe33488b2c228cee9a90226b6175b",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        8,
+        0,
+        74
+      ],
+      "resnet18_int8": [
+        8,
+        0,
+        74
+      ]
+    },
+    {
+      "id": "chocolate_cake/3120351",
+      "asset": "photos/021.jpg",
+      "label": 21,
+      "sha256": "708fba8349203fd8720fb3b3dbe53993abb5b592720017f2130fa252020286d6",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        21,
+        72,
+        42
+      ],
+      "resnet18_int8": [
+        21,
+        42,
+        72
+      ]
+    },
+    {
+      "id": "edamame/3669870",
+      "asset": "photos/033.jpg",
+      "label": 33,
+      "sha256": "01d734c307e4ee54c744d28c3babc894ee275d3aaf86a7b2cdfc55407ce75a65",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        33,
+        88,
+        99
+      ],
+      "resnet18_int8": [
+        33,
+        88,
+        99
+      ]
+    },
+    {
+      "id": "pulled_pork_sandwich/3760542",
+      "asset": "photos/080.jpg",
+      "label": 80,
+      "sha256": "05a077ea4212f79f8659720a4a992307bf7e50b9103dbf5d9cb88a5e211d6e21",
+      "width": 289,
+      "height": 512,
+      "resnet18_fp32": [
+        70,
+        80,
+        91
+      ],
+      "resnet18_int8": [
+        70,
+        80,
+        91
+      ]
+    },
+    {
+      "id": "mussels/1032631",
+      "asset": "photos/065.jpg",
+      "label": 65,
+      "sha256": "02cf5dc8916412ae926e202fee3b17963d8bb80056170734927c3a36a8ca25d7",
+      "width": 512,
+      "height": 289,
+      "resnet18_fp32": [
+        65,
+        71,
+        17
+      ],
+      "resnet18_int8": [
+        65,
+        71,
+        17
+      ]
+    },
+    {
+      "id": "gyoza/3368789",
+      "asset": "photos/052.jpg",
+      "label": 52,
+      "sha256": "0534ef796cb841b498b5d9c766115955aafaec985abd544748ecfb0cd295d071",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        52,
+        32,
+        41
+      ],
+      "resnet18_int8": [
+        52,
+        32,
+        41
+      ]
+    },
+    {
+      "id": "risotto/2739060",
+      "asset": "photos/084.jpg",
+      "label": 84,
+      "sha256": "41aa7ac61e93b15ceb45b415acaf0576fdef2db2dc4f69918aa08b911ff81f91",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        84,
+        24,
+        47
+      ],
+      "resnet18_int8": [
+        84,
+        24,
+        47
+      ]
+    },
+    {
+      "id": "crab_cakes/2316460",
+      "asset": "photos/026.jpg",
+      "label": 26,
+      "sha256": "5f617dfe38b2f8be5c79680ae5fe201c24a0bddccc26ad164923b8a391611533",
+      "width": 512,
+      "height": 341,
+      "resnet18_fp32": [
+        26,
+        37,
+        50
+      ],
+      "resnet18_int8": [
+        26,
+        37,
+        50
+      ]
+    },
+    {
+      "id": "pad_thai/3828756",
+      "asset": "photos/070.jpg",
+      "label": 70,
+      "sha256": "2cf6233d928d9389f363ad80c412ecf7a266897fb96ca392e8cd61a9fb1a8607",
+      "width": 512,
+      "height": 307,
+      "resnet18_fp32": [
+        70,
+        44,
+        50
+      ],
+      "resnet18_int8": [
+        70,
+        44,
+        50
+      ]
+    },
+    {
+      "id": "grilled_salmon/2540331",
+      "asset": "photos/050.jpg",
+      "label": 50,
+      "sha256": "2840e0aaa0c49c083f1bcd969b8fc73b0f9e717c37e41ed84dffa42a81fbfadd",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        50,
+        46,
+        12
+      ],
+      "resnet18_int8": [
+        50,
+        46,
+        12
+      ]
+    },
+    {
+      "id": "steak/504349",
+      "asset": "photos/093.jpg",
+      "label": 93,
+      "sha256": "3f74acffa696d66b6d77f421b1d96825b04593bf9725603812792c709ffc1fd8",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        93,
+        37,
+        77
+      ],
+      "resnet18_int8": [
+        93,
+        37,
+        77
+      ]
+    },
+    {
+      "id": "greek_salad/193155",
+      "asset": "photos/048.jpg",
+      "label": 48,
+      "sha256": "481bb1fda9406248ab9fe923ed907e9d52944235a0ace02f8d0f5b6c5d0098e2",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        48,
+        36,
+        11
+      ],
+      "resnet18_int8": [
+        48,
+        36,
+        11
+      ]
+    },
+    {
+      "id": "lobster_bisque/2179217",
+      "asset": "photos/060.jpg",
+      "label": 60,
+      "sha256": "0787e0c79091d215ae745cfd430ff05640f5d801368c053c94c841ee4bca9ea2",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        60,
+        18,
+        41
+      ],
+      "resnet18_int8": [
+        60,
+        18,
+        41
+      ]
+    },
+    {
+      "id": "filet_mignon/138362",
+      "asset": "photos/037.jpg",
+      "label": 37,
+      "sha256": "362e3102cb4afd478120585b288b01d9993848ef4cb9e4b894c618029896c1da",
+      "width": 512,
+      "height": 382,
+      "resnet18_fp32": [
+        37,
+        26,
+        99
+      ],
+      "resnet18_int8": [
+        37,
+        26,
+        99
+      ]
+    },
+    {
+      "id": "gnocchi/3821730",
+      "asset": "photos/047.jpg",
+      "label": 47,
+      "sha256": "29587b70e7660da0dbc82fed763e5a37b9dbc852b56fe33b856d6ac0621f7e00",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        82,
+        47,
+        89
+      ],
+      "resnet18_int8": [
+        82,
+        47,
+        89
+      ]
+    },
+    {
+      "id": "frozen_yogurt/2750098",
+      "asset": "photos/045.jpg",
+      "label": 45,
+      "sha256": "12bc575e145f55a64ebf8393e24741b3f0627c8729b05cc90ffb4b4d30e294e8",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        45,
+        5,
+        78
+      ],
+      "resnet18_int8": [
+        45,
+        5,
+        78
+      ]
+    },
+    {
+      "id": "tuna_tartare/884242",
+      "asset": "photos/099.jpg",
+      "label": 99,
+      "sha256": "11dd552f13ca09ef4f984ebc67b965499503ea928cf362cf2272cbeec1ec9c06",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        99,
+        4,
+        15
+      ],
+      "resnet18_int8": [
+        99,
+        4,
+        15
+      ]
+    },
+    {
+      "id": "seaweed_salad/3270222",
+      "asset": "photos/088.jpg",
+      "label": 88,
+      "sha256": "025534b4a54b10d74204b33274688d2d3c39bc0aa45698ad7d4c51a1e9442d39",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        88,
+        84,
+        5
+      ],
+      "resnet18_int8": [
+        88,
+        84,
+        5
+      ]
+    },
+    {
+      "id": "spaghetti_carbonara/1804630",
+      "asset": "photos/091.jpg",
+      "label": 91,
+      "sha256": "39d5cb707269e3db8114522cb5f8a75c8f4eabc30eb1af6b8126c83f55b196f6",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        91,
+        90,
+        67
+      ],
+      "resnet18_int8": [
+        91,
+        90,
+        67
+      ]
+    },
+    {
+      "id": "cannoli/2181827",
+      "asset": "photos/012.jpg",
+      "label": 12,
+      "sha256": "0bc1c1c0c4de3ed8c9714385eaee45d89008be30ef08c68c8e84adb689a5c380",
+      "width": 512,
+      "height": 341,
+      "resnet18_fp32": [
+        12,
+        2,
+        39
+      ],
+      "resnet18_int8": [
+        12,
+        2,
+        39
+      ]
+    },
+    {
+      "id": "falafel/3376916",
+      "asset": "photos/036.jpg",
+      "label": 36,
+      "sha256": "a64c33b5e3ecfc702ef66d72301ba5a587b17d53cd62c2298dac53e24463e392",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        36,
+        26,
+        4
+      ],
+      "resnet18_int8": [
+        36,
+        26,
+        4
+      ]
+    },
+    {
+      "id": "churros/3479518",
+      "asset": "photos/023.jpg",
+      "label": 23,
+      "sha256": "0c01ff934aa4e8ea005aed89f965c22fc584528574fb70f85849ac65b9141654",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        23,
+        1,
+        42
+      ],
+      "resnet18_int8": [
+        23,
+        1,
+        42
+      ]
+    },
+    {
+      "id": "foie_gras/1979453",
+      "asset": "photos/039.jpg",
+      "label": 39,
+      "sha256": "2eb4ec2b346a7b040d7f7127b27eb3983396309b9ac4749a9a52a64eea205859",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        81,
+        37,
+        79
+      ],
+      "resnet18_int8": [
+        37,
+        81,
+        79
+      ]
+    },
+    {
+      "id": "french_fries/3543947",
+      "asset": "photos/040.jpg",
+      "label": 40,
+      "sha256": "250b4b9e728e9b146a148dd37a55f8ef8aaeadacc797948e0830bb0917445f72",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        40,
+        23,
+        20
+      ],
+      "resnet18_int8": [
+        40,
+        23,
+        20
+      ]
+    },
+    {
+      "id": "chicken_curry/418069",
+      "asset": "photos/018.jpg",
+      "label": 18,
+      "sha256": "0f4e5dec2373102369b1996de61fea371f62e22eaa6d9f716fa0caf3126d5207",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        18,
+        89,
+        93
+      ],
+      "resnet18_int8": [
+        18,
+        89,
+        93
+      ]
+    },
+    {
+      "id": "omelette/3156980",
+      "asset": "photos/067.jpg",
+      "label": 67,
+      "sha256": "0ad72b862a781833863a66f195c115b04110df64a261bd2ef9a5d3b5cbc96517",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        0,
+        72,
+        6
+      ],
+      "resnet18_int8": [
+        0,
+        72,
+        85
+      ]
+    },
+    {
+      "id": "macaroni_and_cheese/1439523",
+      "asset": "photos/062.jpg",
+      "label": 62,
+      "sha256": "24d3e05ba557354c6ccb3e96998686e68a1a561cf35d3f2d375c9450253d2fad",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        62,
+        91,
+        40
+      ],
+      "resnet18_int8": [
+        62,
+        91,
+        40
+      ]
+    },
+    {
+      "id": "lobster_roll_sandwich/1863757",
+      "asset": "photos/061.jpg",
+      "label": 61,
+      "sha256": "5367fadc168cc7525f99cade79dddbfd36339b9dbd57d50bc0858ede02fb40ee",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        61,
+        80,
+        10
+      ],
+      "resnet18_int8": [
+        61,
+        80,
+        10
+      ]
+    },
+    {
+      "id": "bibimbap/83215",
+      "asset": "photos/007.jpg",
+      "label": 7,
+      "sha256": "0ba63035b57d1366a53347b16ef87d5c85c78833d01723d47ff44fa004ddf129",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        7,
+        81,
+        88
+      ],
+      "resnet18_int8": [
+        7,
+        81,
+        88
+      ]
+    },
+    {
+      "id": "eggs_benedict/1653071",
+      "asset": "photos/034.jpg",
+      "label": 34,
+      "sha256": "2a4b10906f51d5dc220cb294ea680b8500087a6cb096ec447dd82423bb7edcb4",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        34,
+        13,
+        26
+      ],
+      "resnet18_int8": [
+        34,
+        13,
+        26
+      ]
+    },
+    {
+      "id": "ravioli/3086649",
+      "asset": "photos/082.jpg",
+      "label": 82,
+      "sha256": "0a49f3aa284a137bb1899f705cca60c08c3fe609424f1b9925524ad2aa470e91",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        82,
+        91,
+        89
+      ],
+      "resnet18_int8": [
+        82,
+        91,
+        89
+      ]
+    },
+    {
+      "id": "garlic_bread/1799852",
+      "asset": "photos/046.jpg",
+      "label": 46,
+      "sha256": "9080560d0cecea2aa905be253f9c719c6aecfb045a5d2b9009f3efe7fc5d36f8",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        46,
+        68,
+        10
+      ],
+      "resnet18_int8": [
+        46,
+        68,
+        10
+      ]
+    },
+    {
+      "id": "baklava/2379083",
+      "asset": "photos/002.jpg",
+      "label": 2,
+      "sha256": "23655210853c863e4bb7b392a854dd806523f45562d0e8b8018ef1ed2c4015df",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        2,
+        85,
+        0
+      ],
+      "resnet18_int8": [
+        2,
+        85,
+        0
+      ]
+    },
+    {
+      "id": "guacamole/1407255",
+      "asset": "photos/051.jpg",
+      "label": 51,
+      "sha256": "3d3a75ce5bd4eb4b725634c5b0a51e836ea5ea5432893ded028441db846b7f25",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        51,
+        11,
+        18
+      ],
+      "resnet18_int8": [
+        51,
+        11,
+        18
+      ]
+    },
+    {
+      "id": "cheese_plate/1769785",
+      "asset": "photos/016.jpg",
+      "label": 16,
+      "sha256": "2decf0492fc198619a7b959d4559110e0dd220ac5e2d137bac63639ae6298a67",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        16,
+        34,
+        67
+      ],
+      "resnet18_int8": [
+        16,
+        34,
+        67
+      ]
+    },
+    {
+      "id": "fish_and_chips/2497717",
+      "asset": "photos/038.jpg",
+      "label": 38,
+      "sha256": "034905ab30865591207199e36fa655868627f2cfbfe4baa5201f6133ef2b4062",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        38,
+        97,
+        20
+      ],
+      "resnet18_int8": [
+        38,
+        97,
+        20
+      ]
+    },
+    {
+      "id": "lasagna/3437022",
+      "asset": "photos/059.jpg",
+      "label": 59,
+      "sha256": "26a9c67f3345f493701388de1b9827173e65e356da399333d1a647bdfebe46dc",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        59,
+        93,
+        77
+      ],
+      "resnet18_int8": [
+        59,
+        77,
+        93
+      ]
+    },
+    {
+      "id": "pizza/2406842",
+      "asset": "photos/076.jpg",
+      "label": 76,
+      "sha256": "01bd8716c78ecb753b08332d17928f785b668f75d2223280445ed9dd878c48c3",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        76,
+        67,
+        66
+      ],
+      "resnet18_int8": [
+        76,
+        67,
+        66
+      ]
+    },
+    {
+      "id": "chocolate_mousse/2868214",
+      "asset": "photos/022.jpg",
+      "label": 22,
+      "sha256": "04cda73e86dcf4d9697e4b57e6c77cdd3d9013cbb3ce89c492ffea20bb5e0718",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        21,
+        22,
+        39
+      ],
+      "resnet18_int8": [
+        21,
+        22,
+        39
+      ]
+    },
+    {
+      "id": "beignets/1222571",
+      "asset": "photos/006.jpg",
+      "label": 6,
+      "sha256": "71dc601eca3cbfd496242db63e01bf97e820a558eb3327815474e10611e7ce2c",
+      "width": 382,
+      "height": 512,
+      "resnet18_fp32": [
+        6,
+        9,
+        36
+      ],
+      "resnet18_int8": [
+        6,
+        9,
+        36
+      ]
+    },
+    {
+      "id": "clam_chowder/3868218",
+      "asset": "photos/024.jpg",
+      "label": 24,
+      "sha256": "017c4471c7740474468680fc05ed5734b5c30b559866b239d3a84220cd9ccbf0",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        24,
+        60,
+        41
+      ],
+      "resnet18_int8": [
+        24,
+        60,
+        41
+      ]
+    },
+    {
+      "id": "beet_salad/177929",
+      "asset": "photos/005.jpg",
+      "label": 5,
+      "sha256": "270e81b129321c6d660e8f08ebfa3a88e47e069f95b93ccce0afcbe3d626d03c",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        5,
+        39,
+        13
+      ],
+      "resnet18_int8": [
+        5,
+        39,
+        13
+      ]
+    },
+    {
+      "id": "spring_rolls/3619897",
+      "asset": "photos/092.jpg",
+      "label": 92,
+      "sha256": "15c5ba38037f7cb1568844bbd804c72a3ca6e3e514ac5199a27b3398cfed2bc1",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        92,
+        85,
+        38
+      ],
+      "resnet18_int8": [
+        92,
+        38,
+        85
+      ]
+    },
+    {
+      "id": "onion_rings/71645",
+      "asset": "photos/068.jpg",
+      "label": 68,
+      "sha256": "081f72af11d3dc89a557ac05c890e918cd1026a92446209e4d67d22467fd849b",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        68,
+        43,
+        23
+      ],
+      "resnet18_int8": [
+        68,
+        43,
+        23
+      ]
+    },
+    {
+      "id": "red_velvet_cake/1802478",
+      "asset": "photos/083.jpg",
+      "label": 83,
+      "sha256": "119985c88eb3095ee28ea9ad081a9bba9e2f2b62ed1b19a3cd426cb7f11b0a55",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        83,
+        98,
+        21
+      ],
+      "resnet18_int8": [
+        83,
+        98,
+        21
+      ]
+    },
+    {
+      "id": "chicken_quesadilla/779730",
+      "asset": "photos/019.jpg",
+      "label": 19,
+      "sha256": "19686149c89ae8b4efd27f07e07566b7bb5989eefe1f3813ebf51a6e4c442ffa",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        25,
+        19,
+        69
+      ],
+      "resnet18_int8": [
+        25,
+        19,
+        69
+      ]
+    },
+    {
+      "id": "pancakes/470161",
+      "asset": "photos/072.jpg",
+      "label": 72,
+      "sha256": "6bc99408ebcf16f6368deb5a4d4db979d15330291c5350f9c673e5f8e23552be",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        72,
+        42,
+        56
+      ],
+      "resnet18_int8": [
+        72,
+        42,
+        56
+      ]
+    },
+    {
+      "id": "fried_calamari/1021613",
+      "asset": "photos/043.jpg",
+      "label": 43,
+      "sha256": "aacbeba1920c53ad4b8e7f06117fb1294fadaf66b5d790e801929740c2bf5da1",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        43,
+        68,
+        73
+      ],
+      "resnet18_int8": [
+        43,
+        68,
+        73
+      ]
+    },
+    {
+      "id": "scallops/457077",
+      "asset": "photos/087.jpg",
+      "label": 87,
+      "sha256": "23192b7b3cfd5164c3fcdc83dff3126e9153e0de260386c0bd092c32172d2fc5",
+      "width": 382,
+      "height": 512,
+      "resnet18_fp32": [
+        87,
+        26,
+        24
+      ],
+      "resnet18_int8": [
+        87,
+        26,
+        24
+      ]
+    },
+    {
+      "id": "chicken_wings/3250522",
+      "asset": "photos/020.jpg",
+      "label": 20,
+      "sha256": "1ec085bb5daddf65251b289fac31346622dbb4678ceed2b1cb53f2fe652310d2",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        20,
+        1,
+        40
+      ],
+      "resnet18_int8": [
+        20,
+        1,
+        40
+      ]
+    },
+    {
+      "id": "apple_pie/343461",
+      "asset": "photos/000.jpg",
+      "label": 0,
+      "sha256": "14db6e36451c6ab48178350215abf6201da7a0659d4f0b4c206a62ac06fe1b03",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        0,
+        49,
+        2
+      ],
+      "resnet18_int8": [
+        0,
+        49,
+        2
+      ]
+    },
+    {
+      "id": "tacos/622425",
+      "asset": "photos/096.jpg",
+      "label": 96,
+      "sha256": "43f4048fee5c4d732b3171f16bb6ef471870945b924e760d9786abef017b8bb3",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        96,
+        11,
+        36
+      ],
+      "resnet18_int8": [
+        96,
+        11,
+        36
+      ]
+    },
+    {
+      "id": "hummus/868622",
+      "asset": "photos/057.jpg",
+      "label": 57,
+      "sha256": "1469649150816ae822024ac33b3f754da25bcf4d090f95b4049468c20c61d0ac",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        86,
+        57,
+        75
+      ],
+      "resnet18_int8": [
+        86,
+        57,
+        75
+      ]
+    },
+    {
+      "id": "takoyaki/893088",
+      "asset": "photos/097.jpg",
+      "label": 97,
+      "sha256": "290f4a3fb0a45effd8400e6052611f847958dda72b7e7291f60faf3978c9c293",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        97,
+        10,
+        7
+      ],
+      "resnet18_int8": [
+        97,
+        10,
+        6
+      ]
+    },
+    {
+      "id": "hamburger/2906568",
+      "asset": "photos/053.jpg",
+      "label": 53,
+      "sha256": "000fd17ddd979a80ef71d96f69cc3b4cfdc8027dd3406e30d438a0a09051c75d",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        53,
+        99,
+        100
+      ],
+      "resnet18_int8": [
+        53,
+        99,
+        100
+      ]
+    },
+    {
+      "id": "spaghetti_bolognese/3248158",
+      "asset": "photos/090.jpg",
+      "label": 90,
+      "sha256": "19d5953fee0e630138b343078ac8d615c01296a5ea7f79be5552e7d5e034a104",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        90,
+        91,
+        93
+      ],
+      "resnet18_int8": [
+        90,
+        91,
+        93
+      ]
+    },
+    {
+      "id": "club_sandwich/2369002",
+      "asset": "photos/025.jpg",
+      "label": 25,
+      "sha256": "7dc2c81f62cd02cef3bc69d05b90c6666a9730cc8c8b3b4059e5fc63f2bd71fc",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        25,
+        53,
+        94
+      ],
+      "resnet18_int8": [
+        25,
+        53,
+        36
+      ]
+    },
+    {
+      "id": "paella/797855",
+      "asset": "photos/071.jpg",
+      "label": 71,
+      "sha256": "002d7fe0a801f7202b9df11320b0f81241cefa6160e5f4bd51f407e690053acb",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        71,
+        65,
+        7
+      ],
+      "resnet18_int8": [
+        71,
+        65,
+        7
+      ]
+    },
+    {
+      "id": "samosa/144404",
+      "asset": "photos/085.jpg",
+      "label": 85,
+      "sha256": "0c3e3ad66f814fb0f11c71842201b3c02d75408d97e77d35d36bfa4044e5b936",
+      "width": 512,
+      "height": 382,
+      "resnet18_fp32": [
+        85,
+        52,
+        32
+      ],
+      "resnet18_int8": [
+        85,
+        32,
+        52
+      ]
+    },
+    {
+      "id": "pork_chop/3661948",
+      "asset": "photos/077.jpg",
+      "label": 77,
+      "sha256": "8a8c70fde9191ff8f58c5956a198be185ff2f2add9932ee9f06925f7e511917f",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        77,
+        37,
+        93
+      ],
+      "resnet18_int8": [
+        77,
+        37,
+        93
+      ]
+    },
+    {
+      "id": "miso_soup/3218344",
+      "asset": "photos/064.jpg",
+      "label": 64,
+      "sha256": "6255777a293dfdbb0d4662f910d0fcf7ed1872d94ef3fe92680b680a4d47bd37",
+      "width": 512,
+      "height": 288,
+      "resnet18_fp32": [
+        54,
+        64,
+        15
+      ],
+      "resnet18_int8": [
+        54,
+        64,
+        15
+      ]
+    },
+    {
+      "id": "cup_cakes/198629",
+      "asset": "photos/029.jpg",
+      "label": 29,
+      "sha256": "4dde164045caab54818413b91c52043eeb5635f396270d9f0603d4c424d018ec",
+      "width": 512,
+      "height": 341,
+      "resnet18_fp32": [
+        29,
+        83,
+        21
+      ],
+      "resnet18_int8": [
+        29,
+        83,
+        21
+      ]
+    },
+    {
+      "id": "creme_brulee/856848",
+      "asset": "photos/027.jpg",
+      "label": 27,
+      "sha256": "30aff4b388ef61dc5b93ba4a0648c495544c0a9205471463695cb4a44b00e6e6",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        41,
+        35,
+        27
+      ],
+      "resnet18_int8": [
+        41,
+        35,
+        27
+      ]
+    },
+    {
+      "id": "shrimp_and_grits/552618",
+      "asset": "photos/089.jpg",
+      "label": 89,
+      "sha256": "1998f9d284fc82a2100efd74cf1c6610c6f6c1ab76b727cfa2099d264c075df6",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        89,
+        47,
+        62
+      ],
+      "resnet18_int8": [
+        89,
+        47,
+        62
+      ]
+    },
+    {
+      "id": "tiramisu/2026255",
+      "asset": "photos/098.jpg",
+      "label": 98,
+      "sha256": "2021e589bb82df2c12d6915cca27c6897b13da5a4a3ebdb59076ae947d7d3a2e",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        98,
+        14,
+        49
+      ],
+      "resnet18_int8": [
+        98,
+        49,
+        14
+      ]
+    },
+    {
+      "id": "beef_tartare/3095479",
+      "asset": "photos/004.jpg",
+      "label": 4,
+      "sha256": "017500acecc0df6860154d80d1346bb27a818fbc36a498f204a53b6ceabefe5d",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        4,
+        5,
+        50
+      ],
+      "resnet18_int8": [
+        4,
+        5,
+        50
+      ]
+    },
+    {
+      "id": "hot_and_sour_soup/1134579",
+      "asset": "photos/054.jpg",
+      "label": 54,
+      "sha256": "09d2548f3e1e766ef939e5d67909efc6a65b52dbccf8329f0ed9610573afb940",
+      "width": 512,
+      "height": 384,
+      "resnet18_fp32": [
+        54,
+        75,
+        41
+      ],
+      "resnet18_int8": [
+        54,
+        75,
+        41
+      ]
+    },
+    {
+      "id": "pho/1217919",
+      "asset": "photos/075.jpg",
+      "label": 75,
+      "sha256": "105dcb8333fdfdc54f358e1617a994b6c4e0d231647406a0b701bdcbef950789",
+      "width": 512,
+      "height": 428,
+      "resnet18_fp32": [
+        75,
+        54,
+        70
+      ],
+      "resnet18_int8": [
+        75,
+        54,
+        70
+      ]
+    },
+    {
+      "id": "caesar_salad/2070814",
+      "asset": "photos/011.jpg",
+      "label": 11,
+      "sha256": "4e8b02445dfdca52fd84c9e49827a1ed408c2a1f62ef75001ba3e73ec1bcc2fe",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        11,
+        5,
+        96
+      ],
+      "resnet18_int8": [
+        11,
+        5,
+        96
+      ]
+    },
+    {
+      "id": "oysters/168218",
+      "asset": "photos/069.jpg",
+      "label": 69,
+      "sha256": "09282341b27029b2717d5e511497bccd92900983ea71c12bdac892d35f26fe88",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        37,
+        93,
+        36
+      ],
+      "resnet18_int8": [
+        37,
+        36,
+        93
+      ]
+    },
+    {
+      "id": "sashimi/1225779",
+      "asset": "photos/086.jpg",
+      "label": 86,
+      "sha256": "1f6ee4cda119b4bd3685de0fad0fa13143b0e77495dc6aa03ba9c1fbab6b37f6",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        86,
+        95,
+        79
+      ],
+      "resnet18_int8": [
+        86,
+        95,
+        79
+      ]
+    },
+    {
+      "id": "caprese_salad/2118947",
+      "asset": "photos/013.jpg",
+      "label": 13,
+      "sha256": "09158773b4bae9eaeea418e7e5bcca991d919931436b2aa3c5f047b4fa9ccbe8",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        13,
+        48,
+        16
+      ],
+      "resnet18_int8": [
+        13,
+        48,
+        16
+      ]
+    },
+    {
+      "id": "cheesecake/1725587",
+      "asset": "photos/017.jpg",
+      "label": 17,
+      "sha256": "2369fbedde35f41eda6388e5a6b3cf0f0759e15de86676a958b4ade1b12b65d4",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        94,
+        17,
+        98
+      ],
+      "resnet18_int8": [
+        94,
+        17,
+        98
+      ]
+    },
+    {
+      "id": "croque_madame/940149",
+      "asset": "photos/028.jpg",
+      "label": 28,
+      "sha256": "0ec077144b259aa4ea0d647004e02f405599e0bd813df77b6161580f5ea5d5b4",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        28,
+        56,
+        34
+      ],
+      "resnet18_int8": [
+        28,
+        56,
+        34
+      ]
+    },
+    {
+      "id": "donuts/361877",
+      "asset": "photos/031.jpg",
+      "label": 31,
+      "sha256": "0d838ea98e1aa3876dab36aea15c7698f9390ca18c068914ae01b9220f69840e",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        31,
+        29,
+        53
+      ],
+      "resnet18_int8": [
+        31,
+        29,
+        37
+      ]
+    },
+    {
+      "id": "escargots/3803422",
+      "asset": "photos/035.jpg",
+      "label": 35,
+      "sha256": "4908d996f4d94640c1f67d06be8edc8ba0a76ab49b1dbffc9d7b8bb125998b22",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        35,
+        97,
+        32
+      ],
+      "resnet18_int8": [
+        35,
+        97,
+        32
+      ]
+    },
+    {
+      "id": "strawberry_shortcake/1196710",
+      "asset": "photos/094.jpg",
+      "label": 94,
+      "sha256": "0569391c82e00281ff95ef0d440b1b8a0a86d567feeffcacccf4c5a23ceca3ad",
+      "width": 511,
+      "height": 512,
+      "resnet18_fp32": [
+        94,
+        17,
+        27
+      ],
+      "resnet18_int8": [
+        94,
+        17,
+        27
+      ]
+    },
+    {
+      "id": "beef_carpaccio/3889985",
+      "asset": "photos/003.jpg",
+      "label": 3,
+      "sha256": "00b2b08ad2d15c5156c40b09f421490e9d473614a0cf287b0569bb335e16dcc7",
+      "width": 512,
+      "height": 512,
+      "resnet18_fp32": [
+        3,
+        4,
+        99
+      ],
+      "resnet18_int8": [
+        3,
+        4,
+        99
+      ]
+    },
+    {
+      "id": "carrot_cake/2894362",
+      "asset": "photos/014.jpg",
+      "label": 14,
+      "sha256": "0d2b8a3108efd7298b8fe92ebca06a572363e74241ce0800dd5e0409eb9d370a",
+      "width": 384,
+      "height": 512,
+      "resnet18_fp32": [
+        14,
+        98,
+        83
+      ],
+      "resnet18_int8": [
+        14,
+        98,
+        83
+      ]
+    },
+    {
+      "id": "ramen/3242614",
+      "asset": "photos/081.jpg",
+      "label": 81,
+      "sha256": "007a78ae43399e6d8a3ac5c9d900e1944ecc77880104b9506fff52aa5909194d",
+      "width": 512,
+      "height": 410,
+      "resnet18_fp32": [
+        81,
+        56,
+        18
+      ],
+      "resnet18_int8": [
+        81,
+        56,
+        18
+      ]
+    }
+  ],
+  "pte_sha256": {
+    "resnet18_fp32": "4b9158b00b0e6a10e4943e4b6de56e51b4b8340b6b833435d829d4ef7d230f9c",
+    "resnet18_int8": "cef57b2a723b5f424f78363e051fa09f6bc87589fa703150a58f303ece26be75"
+  },
+  "ranking": "Desktop PTE logits, descending stable sort (lower class index breaks ties)"
+}

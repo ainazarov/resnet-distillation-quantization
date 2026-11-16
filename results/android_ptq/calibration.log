@@ -1,0 +1,19 @@
+W1116 14:11:29.027000 4420 Lib\site-packages\torch\utils\_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+Calibrated 50/505 in 4.5s
+Calibrated 100/505 in 9.0s
+Calibrated 150/505 in 12.6s
+Calibrated 200/505 in 16.8s
+Calibrated 250/505 in 20.7s
+Calibrated 300/505 in 24.6s
+Calibrated 350/505 in 27.9s
+Calibrated 400/505 in 31.2s
+Calibrated 450/505 in 34.6s
+Calibrated 500/505 in 37.9s
+Calibrated 505/505 in 38.2s
+Exported C:\code\destillation_acceleration_of_models\v6\android\app\src\precision\assets\models\resnet18_int8.pte
+[cpuinfo_utils.cpp:71] Reading file /sys/devices/soc0/image_version
+[cpuinfo_utils.cpp:87] Failed to open midr file /sys/devices/soc0/image_version
+[cpuinfo_utils.cpp:100] Reading file /sys/devices/system/cpu/cpu0/regs/identification/midr_el1
+[cpuinfo_utils.cpp:109] Failed to open midr file /sys/devices/system/cpu/cpu0/regs/identification/midr_el1
+[cpuinfo_utils.cpp:125] CPU info and manual query on # of cpus dont match.
+C:\code\destillation_acceleration_of_models\v6\results\android_ptq\export.json

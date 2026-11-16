@@ -1,0 +1,126 @@
+{
+  "executorch": "1.5.1",
+  "torch": "2.14.0+cpu",
+  "torchvision": "0.29.0+cpu",
+  "input_shape": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "dtype": "float32",
+  "models": {
+    "teacher": {
+      "checkpoint_sha256": "9e3df3a516df3ff8c67052ec66f7aed901e1f22943d704258aa5d9b31b3dfa20",
+      "pte_sha256": "5a8ebdc194825bcd9472470f76faea098cfd054d53a367b5a7c9cfd82eeb7831",
+      "bytes": 94797844,
+      "delegates": [
+        "XnnpackBackend"
+      ],
+      "portable_operators": [],
+      "parity": [
+        {
+          "id": "fried_rice/3331345",
+          "top3": [
+            44,
+            71,
+            46
+          ],
+          "max_abs_logit_error": 5.4836273193359375e-06
+        },
+        {
+          "id": "dumplings/2630977",
+          "top3": [
+            32,
+            94,
+            75
+          ],
+          "max_abs_logit_error": 6.4373016357421875e-06
+        },
+        {
+          "id": "macarons/3166758",
+          "top3": [
+            63,
+            55,
+            83
+          ],
+          "max_abs_logit_error": 8.106231689453125e-06
+        },
+        {
+          "id": "breakfast_burrito/140461",
+          "top3": [
+            17,
+            10,
+            9
+          ],
+          "max_abs_logit_error": 3.4809112548828125e-05
+        },
+        {
+          "id": "nachos/121508",
+          "top3": [
+            66,
+            51,
+            19
+          ],
+          "max_abs_logit_error": 1.0967254638671875e-05
+        }
+      ]
+    },
+    "distilled": {
+      "checkpoint_sha256": "e3fa7754e35a355b561af8aefc625445a634d61704f714ad37ffd2736874194c",
+      "pte_sha256": "4b9158b00b0e6a10e4943e4b6de56e51b4b8340b6b833435d829d4ef7d230f9c",
+      "bytes": 44912916,
+      "delegates": [
+        "XnnpackBackend"
+      ],
+      "portable_operators": [],
+      "parity": [
+        {
+          "id": "fried_rice/3331345",
+          "top3": [
+            44,
+            71,
+            14
+          ],
+          "max_abs_logit_error": 1.1920928955078125e-06
+        },
+        {
+          "id": "dumplings/2630977",
+          "top3": [
+            32,
+            76,
+            7
+          ],
+          "max_abs_logit_error": 4.291534423828125e-06
+        },
+        {
+          "id": "macarons/3166758",
+          "top3": [
+            63,
+            94,
+            98
+          ],
+          "max_abs_logit_error": 2.1457672119140625e-06
+        },
+        {
+          "id": "breakfast_burrito/140461",
+          "top3": [
+            10,
+            17,
+            9
+          ],
+          "max_abs_logit_error": 5.4836273193359375e-06
+        },
+        {
+          "id": "nachos/121508",
+          "top3": [
+            66,
+            96,
+            56
+          ],
+          "max_abs_logit_error": 1.3828277587890625e-05
+        }
+      ]
+    }
+  }
+}

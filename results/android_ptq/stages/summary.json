@@ -1,0 +1,77 @@
+{
+  "n_per_model": 101,
+  "method": "single instrumented pass per pair; sums and shares use arithmetic means",
+  "models": {
+    "resnet18_fp32": {
+      "source": "precision.json",
+      "mean_ms": {
+        "decode_rgb_ms": 2.286713683168317,
+        "resize_crop_norm_tensor_ms": 1.8279706534653466,
+        "forward_ms": 21.413010554455447,
+        "top3_readback_labels_ms": 0.04734446534653466,
+        "jpeg_to_top3_ms": 25.575039356435642
+      },
+      "fraction_of_total_time": {
+        "decode_rgb_ms": 0.08941193213033682,
+        "resize_crop_norm_tensor_ms": 0.07147479337134863,
+        "forward_ms": 0.8372620763559891,
+        "top3_readback_labels_ms": 0.0018511981423254783
+      },
+      "median_ms": {
+        "decode_rgb_ms": 2.254062,
+        "resize_crop_norm_tensor_ms": 1.866523,
+        "forward_ms": 21.234844,
+        "top3_readback_labels_ms": 0.019492,
+        "jpeg_to_top3_ms": 25.453633
+      },
+      "p95_ms": {
+        "decode_rgb_ms": 2.954648,
+        "resize_crop_norm_tensor_ms": 2.051875,
+        "forward_ms": 22.635508,
+        "top3_readback_labels_ms": 0.089297,
+        "jpeg_to_top3_ms": 27.79039
+      }
+    },
+    "resnet18_int8": {
+      "source": "precision.json",
+      "mean_ms": {
+        "decode_rgb_ms": 2.174279435643564,
+        "resize_crop_norm_tensor_ms": 1.820460297029703,
+        "forward_ms": 5.276917168316832,
+        "top3_readback_labels_ms": 0.04740557425742574,
+        "jpeg_to_top3_ms": 9.319062475247526
+      },
+      "fraction_of_total_time": {
+        "decode_rgb_ms": 0.23331525477146378,
+        "resize_crop_norm_tensor_ms": 0.1953480086505536,
+        "forward_ms": 0.5662497898616857,
+        "top3_readback_labels_ms": 0.005086946716296866
+      },
+      "median_ms": {
+        "decode_rgb_ms": 2.194648,
+        "resize_crop_norm_tensor_ms": 1.858985,
+        "forward_ms": 5.082422,
+        "top3_readback_labels_ms": 0.028437,
+        "jpeg_to_top3_ms": 9.122461
+      },
+      "p95_ms": {
+        "decode_rgb_ms": 2.64707,
+        "resize_crop_norm_tensor_ms": 2.102344,
+        "forward_ms": 6.843359,
+        "top3_readback_labels_ms": 0.089726,
+        "jpeg_to_top3_ms": 11.172539
+      }
+    }
+  },
+  "excluded": {
+    "file": "excluded-architectures-background.json",
+    "reason": "Android activity paused at 14:31:34.196 MSK during warmup; background execution invalidates foreground latency comparison."
+  },
+  "foreground_check": {
+    "activity_resumed_msk": "14:31:10.865",
+    "timed_start_msk": "14:31:12.141",
+    "timed_end_msk": "14:31:15.675",
+    "activity_paused_msk": "14:31:31.783",
+    "source": "adb logcat -b events, wm_on_resume_called and wm_on_paused_called; November 16, 2026"
+  }
+}

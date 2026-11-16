@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+/data/
+/assets/*.pt
+/checkpoints/*.pt
+!/checkpoints/plain.pt
+!/checkpoints/distilled.pt
+*.pte
+*.apk
+/damcourse_ai/
+/recomended_reading_materials_downloaded/
+/Дистилляция_*

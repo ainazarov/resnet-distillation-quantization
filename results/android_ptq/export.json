@@ -1,0 +1,316 @@
+{
+  "executorch": "1.5.1",
+  "torch": "2.14.0+cpu",
+  "torchao": "0.18.0",
+  "checkpoint_sha256": "e3fa7754e35a355b561af8aefc625445a634d61704f714ad37ffd2736874194c",
+  "calibration_count": 505,
+  "calibration_manifest_sha256": "a237af3b5650e800b55aac6384e5c2f8f76f348d85c5bdbe3561f8c69cf84a12",
+  "precision_reference_sha256": "ac7ceb40db2502b7f44f1cd873d2a70b599c5fc8c7422e524e086febab860671",
+  "calibration_transform": "Compose(\n    Resize(size=255, interpolation=bilinear, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    ToTensor()\n    Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])\n)",
+  "activation_observer": "HistogramObserver",
+  "quantization": "static per-tensor affine signed INT8 activations, symmetric per-channel INT8 weights",
+  "models": {
+    "resnet18_fp32": {
+      "bytes": 44912916,
+      "sha256": "4b9158b00b0e6a10e4943e4b6de56e51b4b8340b6b833435d829d4ef7d230f9c"
+    },
+    "resnet18_int8": {
+      "bytes": 11307796,
+      "sha256": "cef57b2a723b5f424f78363e051fa09f6bc87589fa703150a58f303ece26be75"
+    }
+  },
+  "delegates": [
+    "XnnpackBackend"
+  ],
+  "portable_operators": [],
+  "converted_pt2e_vs_int8_pte": [
+    {
+      "id": "fried_rice/3331345",
+      "eager_top3": [
+        44,
+        71,
+        14
+      ],
+      "pte_top3": [
+        44,
+        71,
+        14
+      ],
+      "max_abs_logit_difference": 0.064586341381073
+    },
+    {
+      "id": "dumplings/2630977",
+      "eager_top3": [
+        32,
+        76,
+        7
+      ],
+      "pte_top3": [
+        32,
+        76,
+        86
+      ],
+      "max_abs_logit_difference": 0.06458640098571777
+    },
+    {
+      "id": "macarons/3166758",
+      "eager_top3": [
+        63,
+        94,
+        98
+      ],
+      "pte_top3": [
+        63,
+        94,
+        98
+      ],
+      "max_abs_logit_difference": 0.06458640098571777
+    },
+    {
+      "id": "breakfast_burrito/140461",
+      "eager_top3": [
+        10,
+        17,
+        9
+      ],
+      "pte_top3": [
+        10,
+        17,
+        9
+      ],
+      "max_abs_logit_difference": 0.06458640098571777
+    },
+    {
+      "id": "nachos/121508",
+      "eager_top3": [
+        66,
+        96,
+        56
+      ],
+      "pte_top3": [
+        66,
+        96,
+        56
+      ],
+      "max_abs_logit_difference": 0.12917256355285645
+    }
+  ],
+  "int8_delegate_graph": {
+    "node_counts": {
+      "XNNConvert": 2,
+      "XNNStaticTranspose": 2,
+      "XNNConv2d": 20,
+      "XNNMaxPooling2d": 1,
+      "XNNAdd": 8,
+      "XNNGlobalAvgPooling2d": 1,
+      "XNNStaticReshape": 1,
+      "XNNFullyConnected": 1
+    },
+    "value_dtypes": {
+      "xnn_datatype_fp32": 2,
+      "xnn_datatype_qint8": 35,
+      "xnn_datatype_qcint8": 21,
+      "xnn_datatype_qcint32": 21
+    },
+    "verified_static_int8_layers": {
+      "XNNConv2d": 20,
+      "XNNFullyConnected": 1
+    },
+    "weight_channel_axis": 0,
+    "scales_per_weight_tensor": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      128,
+      128,
+      128,
+      128,
+      128,
+      256,
+      256,
+      256,
+      256,
+      256,
+      512,
+      512,
+      512,
+      512,
+      512,
+      101
+    ],
+    "input_activation_qparams": [
+      {
+        "scale": 0.018649,
+        "zero_point": -14
+      },
+      {
+        "scale": 0.013299,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.007939,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.014766,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.007627,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.016668,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.0065,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.016668,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.011128,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.006551,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.014247,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.007739,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.014247,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.011771,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.00571,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.012104,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.005508,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.012104,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.011249,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.005799,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.056529,
+        "zero_point": -128
+      }
+    ],
+    "output_activation_qparams": [
+      {
+        "scale": 0.013299,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.007939,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.020727,
+        "zero_point": 22
+      },
+      {
+        "scale": 0.007627,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.028624,
+        "zero_point": 30
+      },
+      {
+        "scale": 0.0065,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.018071,
+        "zero_point": -9
+      },
+      {
+        "scale": 0.016068,
+        "zero_point": 5
+      },
+      {
+        "scale": 0.006551,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.020113,
+        "zero_point": 9
+      },
+      {
+        "scale": 0.007739,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.021443,
+        "zero_point": -20
+      },
+      {
+        "scale": 0.007152,
+        "zero_point": 35
+      },
+      {
+        "scale": 0.00571,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.020166,
+        "zero_point": 31
+      },
+      {
+        "scale": 0.005508,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.020463,
+        "zero_point": 10
+      },
+      {
+        "scale": 0.019309,
+        "zero_point": -10
+      },
+      {
+        "scale": 0.005799,
+        "zero_point": -128
+      },
+      {
+        "scale": 0.097066,
+        "zero_point": -13
+      },
+      {
+        "scale": 0.064586,
+        "zero_point": -38
+      }
+    ]
+  }
+}

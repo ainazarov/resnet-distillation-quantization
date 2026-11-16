@@ -1,0 +1,114 @@
+{
+  "phase": "final",
+  "images": 505,
+  "warmup_per_model": 20,
+  "manifest_sha256": "43ba6ffe5f625d8a1a441dc96e7a24252096ee9b29e2a37e895c1b74434d2a41",
+  "cpu": "11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz",
+  "os": "Windows-10-10.0.19045-SP0",
+  "batch": 1,
+  "dtype": "FP32",
+  "intraop_threads": 4,
+  "interop_threads": 1,
+  "torch": "2.5.1+cpu",
+  "torchvision": "0.20.1+cpu",
+  "pillow": "11.3.0",
+  "latency_unit": "ms",
+  "file_cache": "warm (every file hash verified before timing)",
+  "end_to_end": "local file open through three class names; excludes model loading and network",
+  "profiled_forwards_per_model": 0,
+  "models": {
+    "teacher": {
+      "parameters": 23714981,
+      "weights_sha256": "9e3df3a516df3ff8c67052ec66f7aed901e1f22943d704258aa5d9b31b3dfa20",
+      "stages": {
+        "decode": {
+          "median": 2.866,
+          "p95": 4.716199999999999,
+          "percent_of_elapsed": 3.0327174449933945
+        },
+        "preprocess": {
+          "median": 3.1861,
+          "p95": 4.438599999999999,
+          "percent_of_elapsed": 2.951732745142488
+        },
+        "forward": {
+          "median": 98.9274,
+          "p95": 133.10037999999997,
+          "percent_of_elapsed": 93.96707328051062
+        },
+        "top3": {
+          "median": 0.0473,
+          "p95": 0.0823199999999999,
+          "percent_of_elapsed": 0.04847652935349565
+        },
+        "end_to_end": {
+          "median": 104.8984,
+          "p95": 146.24517999999986,
+          "percent_of_elapsed": 100.0
+        }
+      }
+    },
+    "plain": {
+      "parameters": 11228325,
+      "weights_sha256": "a43b8b6793379933f7920334008431e8f483db8753a251a55a08609d929302e5",
+      "stages": {
+        "decode": {
+          "median": 2.9619,
+          "p95": 4.90774,
+          "percent_of_elapsed": 6.796868311637993
+        },
+        "preprocess": {
+          "median": 3.2133,
+          "p95": 4.762059999999997,
+          "percent_of_elapsed": 6.484031455655092
+        },
+        "forward": {
+          "median": 41.925,
+          "p95": 56.14689999999999,
+          "percent_of_elapsed": 86.61990673909564
+        },
+        "top3": {
+          "median": 0.0459,
+          "p95": 0.07209999999999996,
+          "percent_of_elapsed": 0.09919349361126499
+        },
+        "end_to_end": {
+          "median": 48.0873,
+          "p95": 65.83778,
+          "percent_of_elapsed": 100.0
+        }
+      }
+    },
+    "distilled": {
+      "parameters": 11228325,
+      "weights_sha256": "e3fa7754e35a355b561af8aefc625445a634d61704f714ad37ffd2736874194c",
+      "stages": {
+        "decode": {
+          "median": 2.9426,
+          "p95": 4.778239999999999,
+          "percent_of_elapsed": 6.652903780558112
+        },
+        "preprocess": {
+          "median": 3.2123,
+          "p95": 4.724039999999999,
+          "percent_of_elapsed": 6.864469515701347
+        },
+        "forward": {
+          "median": 42.0093,
+          "p95": 52.87903999999998,
+          "percent_of_elapsed": 86.37870523113631
+        },
+        "top3": {
+          "median": 0.0459,
+          "p95": 0.07647999999999991,
+          "percent_of_elapsed": 0.10392147260423006
+        },
+        "end_to_end": {
+          "median": 48.228,
+          "p95": 61.75248,
+          "percent_of_elapsed": 100.0
+        }
+      }
+    }
+  }
+}

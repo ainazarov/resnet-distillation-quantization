@@ -1,0 +1,21 @@
+{
+  "runs": 3,
+  "photos_per_run": 101,
+  "cooldown_seconds": 20,
+  "models": {
+    "resnet18_fp32": {
+      "pte_sha256": "4b9158b00b0e6a10e4943e4b6de56e51b4b8340b6b833435d829d4ef7d230f9c",
+      "median_forward_ms": 21.427031,
+      "p95_jpeg_to_top3_ms": 27.903594099999996,
+      "ordered_python_matches": 303,
+      "requests": 303
+    },
+    "resnet18_int8": {
+      "pte_sha256": "cef57b2a723b5f424f78363e051fa09f6bc87589fa703150a58f303ece26be75",
+      "median_forward_ms": 4.988437,
+      "p95_jpeg_to_top3_ms": 11.604550799999997,
+      "ordered_python_matches": 303,
+      "requests": 303
+    }
+  }
+}

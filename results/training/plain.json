@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "config": {
+    "role": "plain",
+    "epochs": 4,
+    "seed": 42,
+    "workers": 8,
+    "batch": 96,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "optimizer": "AdamW",
+    "schedule": "0.15 epoch linear warmup, cosine decay to 2% of peak",
+    "selection": "highest validation top3, then top1, then earliest epoch",
+    "augment": "RandomResizedCrop(224, scale=(0.65,1)), RandomHorizontalFlip(0.5)",
+    "fit_n": 70700,
+    "validation_n": 5050,
+    "split_sha256": "b30217d9681c6f181170413a32f48ea2b8a4444b5d2d2d4af22bfedbda0435a8",
+    "initialization_sha256": "b2e041a222c0d46528b78cdd82d84a9b764967cbb5ef2c3c2ccf3ddf6571c452",
+    "teacher_sha256": null,
+    "loss": "CE",
+    "training_dtype": "bfloat16 autocast",
+    "torch": "2.12.0+cu130",
+    "device": "cuda"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.0107691287994385,
+      "validation": {
+        "n": 5050,
+        "top1_correct": 3125,
+        "top3_correct": 4039,
+        "top1": 0.6188118811881188,
+        "top3": 0.7998019801980198
+      },
+      "first_batch_sha256": "cbf91d62609fcdd9a5091463bb625903dbcd0ab02d584ce2ae152dd2b2ec491f",
+      "seconds": 32.93878069400125
+    },
+    {
+      "epoch": 2,
+      "loss": 1.1207919120788574,
+      "validation": {
+        "n": 5050,
+        "top1_correct": 3530,
+        "top3_correct": 4289,
+        "top1": 0.699009900990099,
+        "top3": 0.8493069306930693
+      },
+      "first_batch_sha256": "e71b0be21a0d8978f8fd3cd81d1380df19c78e947a18461aebcbe4cd2da049dc",
+      "seconds": 31.039610367999558
+    },
+    {
+      "epoch": 3,
+      "loss": 0.768767774105072,
+      "validation": {
+        "n": 5050,
+        "top1_correct": 3763,
+        "top3_correct": 4424,
+        "top1": 0.7451485148514851,
+        "top3": 0.876039603960396
+      },
+      "first_batch_sha256": "bea793f583b57bbdefa1ccc894dfe01b024b86be6828cfa645500e6a25b90951",
+      "seconds": 31.04931475900048
+    },
+    {
+      "epoch": 4,
+      "loss": 0.5607911944389343,
+      "validation": {
+        "n": 5050,
+        "top1_correct": 3830,
+        "top3_correct": 4470,
+        "top1": 0.7584158415841584,
+        "top3": 0.8851485148514852
+      },
+      "first_batch_sha256": "acfe782a7ed361095cfb2480bc1ea33056eac99b20d2e1f876ca5d2e04e21391",
+      "seconds": 31.05068723400109
+    }
+  ],
+  "selected_epoch": 4,
+  "checkpoint_sha256": "a43b8b6793379933f7920334008431e8f483db8753a251a55a08609d929302e5"
+}
